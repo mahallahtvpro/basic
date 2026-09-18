@@ -1,1 +1,803 @@
-function _0xd471(_0x3ffe97,_0x149fd4){_0x3ffe97=_0x3ffe97-0x1c5;var _0x162999=_0x1629();var _0xd471a2=_0x162999[_0x3ffe97];return _0xd471a2;}(function(_0x25b8b7,_0x1d0a56){var _0x314918=_0xd471,_0x4544ff=_0x25b8b7();while(!![]){try{var _0x33d32e=-parseInt(_0x314918(0x244))/0x1*(-parseInt(_0x314918(0x20c))/0x2)+parseInt(_0x314918(0x1e7))/0x3*(-parseInt(_0x314918(0x21e))/0x4)+-parseInt(_0x314918(0x211))/0x5*(-parseInt(_0x314918(0x276))/0x6)+parseInt(_0x314918(0x264))/0x7+-parseInt(_0x314918(0x280))/0x8+parseInt(_0x314918(0x241))/0x9*(-parseInt(_0x314918(0x243))/0xa)+parseInt(_0x314918(0x1df))/0xb;if(_0x33d32e===_0x1d0a56)break;else _0x4544ff['push'](_0x4544ff['shift']());}catch(_0x106077){_0x4544ff['push'](_0x4544ff['shift']());}}}(_0x1629,0x5272c),(function(){'use strict';var _0x5f5267=_0xd471;var _0x46ce96={'apiKey':_0x5f5267(0x274),'authDomain':'mahallahtvpro.firebaseapp.com','projectId':'mahallahtvpro','storageBucket':_0x5f5267(0x204),'messagingSenderId':_0x5f5267(0x1f0),'appId':'1:1064313843618:web:53f8261478f8301cfdccfb'},_0x569911=_0x5f5267(0x1db),_0x586609='ftv_deviceId',_0x4f2e62=_0x5f5267(0x224),_0x193491=null,_0x425353=null,_0x1af662=null,_0x19266e=null,_0x16eacf=null,_0x507f4b=null;function _0x13dfb(){var _0x51310f=_0x5f5267,_0x1bab38=[_0x51310f(0x22f)][_0x51310f(0x1e9)](Array[_0x51310f(0x23c)]['slice'][_0x51310f(0x1e4)](arguments));console[_0x51310f(0x282)][_0x51310f(0x214)](console,_0x1bab38);}function _0x7247a7(){var _0x263ebd=_0x5f5267;return _0x263ebd(0x297)['replace'](/[xy]/g,function(_0x11c9a9){var _0x597076=_0x263ebd,_0x2093f2=Math[_0x597076(0x25c)]()*0x10|0x0,_0x19c64f=_0x11c9a9==='x'?_0x2093f2:_0x2093f2&0x3|0x8;return _0x19c64f['toString'](0x10);});}function _0x1de516(){var _0x485671=_0x5f5267;return String(Math['floor'](0x186a0+Math[_0x485671(0x25c)]()*0xdbba0));}var _0x353bc4='frb-pairing-overlay';function _0x5e0aa7(){var _0x105433=_0x5f5267;if(document[_0x105433(0x1ed)](_0x105433(0x252)))return;var _0x214cea=document[_0x105433(0x202)]('style');_0x214cea['id']=_0x105433(0x252),_0x214cea['textContent']='#'+_0x353bc4+'{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;z-index:99999;background:#0f172a;'+_0x105433(0x203)+_0x105433(0x292)+'#'+_0x353bc4+_0x105433(0x20f)+'#'+_0x353bc4+_0x105433(0x1f2)+'#'+_0x353bc4+'\x20.frb-box{display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center;}'+'#'+_0x353bc4+_0x105433(0x1d3)+'background:rgba(255,255,255,.06);border:1px\x20solid\x20rgba(255,255,255,.15);'+'border-radius:16px;padding:18px\x2028px;color:#FFD700;font-family:monospace;}'+'#'+_0x353bc4+_0x105433(0x1d9)+'#'+_0x353bc4+_0x105433(0x1cd)+'#'+_0x353bc4+_0x105433(0x206)+'#'+_0x353bc4+_0x105433(0x294)+'align-items:center;gap:8px;}'+'#'+_0x353bc4+_0x105433(0x1e5)+'animation:frb-blink\x201.4s\x20infinite;}'+_0x105433(0x253)+'#'+_0x353bc4+_0x105433(0x1eb)+_0x105433(0x1ca)+_0x105433(0x22d)+'#'+_0x353bc4+_0x105433(0x229)+_0x105433(0x26c)+_0x105433(0x1cb),document['head'][_0x105433(0x24d)](_0x214cea);}function _0x2d9861(_0x5a2b6f){var _0x4816f5=_0x5f5267;try{if(typeof qrcode!=='function')return _0x13dfb(_0x4816f5(0x24b)),'';var _0x1c069b=qrcode(0x0,'M');return _0x1c069b[_0x4816f5(0x227)](_0x5a2b6f),_0x1c069b[_0x4816f5(0x29a)](),_0x1c069b[_0x4816f5(0x27b)](0x6,0x8,_0x4816f5(0x23a));}catch(_0x211deb){return _0x13dfb('Gagal\x20membuat\x20QR:\x20'+(_0x211deb&&_0x211deb['message']?_0x211deb[_0x4816f5(0x1d8)]:_0x211deb)),'';}}function _0x4c0610(_0x4c0d49){var _0x1beeaa=_0x5f5267;_0x5e0aa7(),_0xad2263();var _0x6b18db=_0x569911+_0x1beeaa(0x207)+_0x4c0d49,_0x34e4bc=_0x2d9861(_0x6b18db),_0x5ab421=document['createElement']('div');_0x5ab421['id']=_0x353bc4,_0x5ab421[_0x1beeaa(0x1d2)]=_0x1beeaa(0x254)+_0x1beeaa(0x1da)+_0x1beeaa(0x22a)+_0x569911+_0x1beeaa(0x27c)+_0x1beeaa(0x261)+_0x1beeaa(0x27f)+_0x4c0d49+_0x1beeaa(0x1ff)+(_0x34e4bc?_0x1beeaa(0x245)+_0x34e4bc+'</div>':'')+_0x1beeaa(0x1ff)+_0x1beeaa(0x228)+_0x569911+_0x1beeaa(0x1ff)+_0x1beeaa(0x221),document['body'][_0x1beeaa(0x24d)](_0x5ab421);var _0x302185=document[_0x1beeaa(0x1ed)](_0x1beeaa(0x238));if(_0x302185)_0x302185[_0x1beeaa(0x1f8)](_0x1beeaa(0x273),_0xad2263);}function _0x4844a7(){var _0x30d586=_0x5f5267;_0x5e0aa7(),_0xad2263();var _0x54d036=document[_0x30d586(0x202)](_0x30d586(0x267));_0x54d036['id']=_0x353bc4,_0x54d036[_0x30d586(0x1d2)]=_0x30d586(0x254)+_0x30d586(0x26a)+_0x30d586(0x1e6)+_0x30d586(0x1f3),document[_0x30d586(0x20b)][_0x30d586(0x24d)](_0x54d036);var _0x31a379=document[_0x30d586(0x1ed)](_0x30d586(0x238));if(_0x31a379)_0x31a379[_0x30d586(0x1f8)](_0x30d586(0x273),_0xad2263);var _0x4a2114=document[_0x30d586(0x1ed)](_0x30d586(0x1f5));if(_0x4a2114)_0x4a2114[_0x30d586(0x1f8)](_0x30d586(0x273),function(){var _0x2f903c=_0x30d586;if(!confirm(_0x2f903c(0x1ee)))return;_0x193491[_0x2f903c(0x295)](_0x2f903c(0x28f))[_0x2f903c(0x223)](_0x1af662)['set']({'paired':![]},{'merge':!![]})[_0x2f903c(0x21a)](function(){var _0x8f1840=_0x2f903c;alert(_0x8f1840(0x226));});});}function _0xad2263(){var _0x34468d=_0x5f5267,_0x200491=document[_0x34468d(0x1ed)](_0x353bc4);if(_0x200491)_0x200491[_0x34468d(0x28b)]();}function _0x253093(){var _0x573f12=_0x5f5267;if(!window[_0x573f12(0x290)]||!firebase[_0x573f12(0x265)])return console['error'](_0x573f12(0x23d)),![];return(!firebase['apps']||!firebase[_0x573f12(0x27a)][_0x573f12(0x1ef)])&&firebase[_0x573f12(0x247)](_0x46ce96),_0x193491=firebase[_0x573f12(0x265)](),_0x425353=firebase[_0x573f12(0x265)][_0x573f12(0x1fc)],!![];}function _0xb66f25(){var _0x50a96c=_0x5f5267;_0x1af662=_0x7247a7(),_0x19266e=_0x1de516(),_0x193491[_0x50a96c(0x295)](_0x50a96c(0x28f))[_0x50a96c(0x223)](_0x1af662)['set']({'paired':![],'createdAt':_0x425353['serverTimestamp']()},{'merge':!![]}),_0x193491['collection'](_0x50a96c(0x270))[_0x50a96c(0x223)](_0x19266e)[_0x50a96c(0x1d1)]({'deviceId':_0x1af662,'createdAt':_0x425353['serverTimestamp']()}),setTimeout(function(){var _0x467d46=_0x50a96c;_0x193491[_0x467d46(0x295)](_0x467d46(0x270))[_0x467d46(0x223)](_0x19266e)[_0x467d46(0x23e)]()['then'](function(_0x1ea224){var _0x6ea153=_0x467d46;if(_0x1ea224['exists'])_0x193491[_0x6ea153(0x295)]('pairing')[_0x6ea153(0x223)](_0x19266e)[_0x6ea153(0x1e3)]();});},0xa*0x3c*0x3e8),_0x4c0610(_0x19266e),_0xd2c22(),_0x1a9769();}function _0xd2c22(){var _0xe1435c=_0x5f5267;if(_0x507f4b)_0x507f4b();_0x507f4b=_0x193491[_0xe1435c(0x295)]('devices')[_0xe1435c(0x223)](_0x1af662)[_0xe1435c(0x231)](function(_0x1a521f){var _0xa81d8=_0xe1435c,_0x1ef4b5=_0x1a521f[_0xa81d8(0x1f4)]();if(!_0x1ef4b5)return;var _0x3fb69f=_0x1ef4b5['paired'];if(_0x3fb69f===!![]&&localStorage[_0xa81d8(0x246)](_0x4f2e62)!=='true')localStorage[_0xa81d8(0x1fb)](_0x586609,_0x1af662),localStorage[_0xa81d8(0x1fb)](_0x4f2e62,_0xa81d8(0x1e8)),_0xad2263(),_0x193491['collection'](_0xa81d8(0x270))['doc'](_0x19266e)[_0xa81d8(0x1e3)]()[_0xa81d8(0x21a)](function(){}),_0x13dfb(_0xa81d8(0x2a2),_0x1af662),_0x79cdb1();else _0x3fb69f===![]&&localStorage[_0xa81d8(0x246)](_0x4f2e62)===_0xa81d8(0x1e8)&&(_0x13dfb('HP\x20memutuskan\x20koneksi.\x20Reset\x20pairing...'),_0xc49bcd());});}function _0xc49bcd(){var _0x150ca4=_0x5f5267;localStorage['removeItem'](_0x586609),localStorage[_0x150ca4(0x288)](_0x4f2e62),_0x16eacf&&(_0x16eacf(),_0x16eacf=null),_0x507f4b&&(_0x507f4b(),_0x507f4b=null),location[_0x150ca4(0x250)]();}var _0x4249b7={'Imsak':_0x5f5267(0x262),'Shubuh':'shubuh','Syuruq':_0x5f5267(0x275),'Dhuha':'dhuha','Dzuhur':_0x5f5267(0x257),'Ashar':_0x5f5267(0x2a0),'Maghrib':'maghrib','Isya':_0x5f5267(0x29c)},_0x3f76c9=(function(){var _0x8ed551=_0x5f5267,_0x411ab1={};for(var _0x38920c in _0x4249b7)if(_0x4249b7[_0x8ed551(0x1dc)](_0x38920c))_0x411ab1[_0x4249b7[_0x38920c]]=_0x38920c;return _0x411ab1;}()),_0x1fed5d={'pre-adzan':_0x5f5267(0x299),'adzan':_0x5f5267(0x21d),'alarm':_0x5f5267(0x25d)},_0x4adc2f={'audioShalawat':{'volId':_0x5f5267(0x219),'valId':_0x5f5267(0x291)},'audioAdzan':{'volId':_0x5f5267(0x218),'valId':_0x5f5267(0x1f1)},'audioRooster':{'volId':_0x5f5267(0x1f6),'valId':'valVolRooster'},'audioBeep':{'volId':'volBeep','valId':'valVolBeep'}},_0x17c3aa={'audioShalawat':'customAudio_shalawat','audioAdzan':_0x5f5267(0x279),'audioRooster':_0x5f5267(0x242),'audioBeep':_0x5f5267(0x200)},_0x347141={'audioShalawat':'shalawat.mp3','audioAdzan':'adzan.mp3','audioRooster':_0x5f5267(0x24e),'audioBeep':'beep.mp3'},_0xefb2bd={'audioShalawat':_0x5f5267(0x1ea),'audioAdzan':_0x5f5267(0x23b),'audioRooster':_0x5f5267(0x1d5),'audioBeep':'labelBeep'};function _0x46096a(_0x3dcc29,_0x4db847){var _0x54d260=_0x5f5267,_0x16c139=parseInt(_0x4db847,0xa);if(isNaN(_0x16c139))return;if(typeof setAudioVolume==='function')setAudioVolume(_0x3dcc29,_0x16c139);var _0x31ebdd=_0x4adc2f[_0x3dcc29];if(_0x31ebdd){var _0x31231e=document[_0x54d260(0x1ed)](_0x31ebdd[_0x54d260(0x260)]),_0x1bee01=document['getElementById'](_0x31ebdd[_0x54d260(0x29d)]);if(_0x31231e)_0x31231e['value']=_0x16c139;if(_0x1bee01)_0x1bee01['textContent']=_0x16c139;}}function _0x15eb9f(){var _0x57d071=_0x5f5267,_0x3efd5d=localStorage[_0x57d071(0x246)](_0x57d071(0x263))==='true',_0x483c6d=[_0x57d071(0x299),'audioAdzan',_0x57d071(0x269),'audioBeep'];!_0x3efd5d?(_0x483c6d[_0x57d071(0x278)](function(_0x28e6a7){var _0x3c1b0a=_0x57d071,_0xfddddc=localStorage[_0x3c1b0a(0x246)]('vol_'+_0x28e6a7);if(_0xfddddc==null)_0xfddddc=_0x3c1b0a(0x1dd);localStorage[_0x3c1b0a(0x1fb)](_0x3c1b0a(0x25b)+_0x28e6a7,_0xfddddc),_0x46096a(_0x28e6a7,0x0);}),localStorage[_0x57d071(0x1fb)](_0x57d071(0x263),_0x57d071(0x1e8))):(_0x483c6d[_0x57d071(0x278)](function(_0x2a9350){var _0x2b3f36=localStorage['getItem']('ftv_preMute_'+_0x2a9350);_0x46096a(_0x2a9350,_0x2b3f36!=null?_0x2b3f36:0x64);}),localStorage[_0x57d071(0x1fb)](_0x57d071(0x263),_0x57d071(0x205)));}function _0x45c0df(_0x3a87f8,_0x339c33){var _0x1c9a59=_0x5f5267;if(!window[_0x1c9a59(0x21c)])return;if(_0x3a87f8!=null)settings['masjidName']=_0x3a87f8||_0x1c9a59(0x213);if(_0x339c33!=null)settings['masjidAddress']=_0x339c33||'';var _0x4e77b9=document[_0x1c9a59(0x1ed)](_0x1c9a59(0x210));if(_0x4e77b9&&_0x3a87f8!=null)_0x4e77b9['value']=settings[_0x1c9a59(0x26b)];var _0x18f0b2=document[_0x1c9a59(0x1ed)](_0x1c9a59(0x222));if(_0x18f0b2&&_0x339c33!=null)_0x18f0b2['value']=settings[_0x1c9a59(0x236)];var _0x4b810f=document['getElementById']('masjidName');if(_0x4b810f)_0x4b810f['textContent']=settings[_0x1c9a59(0x26b)];var _0x4b5467=document[_0x1c9a59(0x1ed)]('masjidAddress');if(_0x4b5467)_0x4b5467['textContent']=settings['masjidAddress'];if(typeof saveSettings===_0x1c9a59(0x1ce))saveSettings();}function _0x1d1bdf(_0x190453){var _0x5ded27=_0x5f5267;if(!window['settings']||_0x190453==null)return;settings[_0x5ded27(0x209)]=_0x190453;var _0x25279a=document[_0x5ded27(0x1ed)](_0x5ded27(0x28a));if(_0x25279a)_0x25279a[_0x5ded27(0x266)]=_0x190453;if(typeof saveSettings===_0x5ded27(0x1ce))saveSettings();if(typeof updateRunningTextUI===_0x5ded27(0x1ce))updateRunningTextUI();}function _0x1a3a8a(_0x8d986b,_0x1b7138){var _0x25a5dc=_0x5f5267,_0x3d3c03=_0x4249b7[_0x8d986b]||String(_0x8d986b)[_0x25a5dc(0x21f)]();if(typeof window[_0x25a5dc(0x27e)]===_0x25a5dc(0x1c5)||typeof adjustOffset!==_0x25a5dc(0x1ce))return;window[_0x25a5dc(0x27e)]=_0x3d3c03,_0x1b7138===_0x25a5dc(0x25f)?adjustOffset(0x0):adjustOffset(parseInt(_0x1b7138,0xa)||0x0);}function _0xd81596(_0x22fcbf,_0x53506b,_0x502e1a){var _0x36a583=_0x5f5267,_0x3aad53=_0x4249b7[_0x22fcbf]||String(_0x22fcbf)[_0x36a583(0x21f)](),_0x5b2f86=parseInt(_0x502e1a,0xa);if(isNaN(_0x5b2f86)||_0x5b2f86<0x0)_0x5b2f86=0x0;window['currentPrayer']=_0x3aad53;if(_0x53506b===_0x36a583(0x26f))window[_0x36a583(0x29e)]=window[_0x36a583(0x29e)]||{},adzanCountdownDurations[_0x3aad53]=_0x5b2f86,localStorage[_0x36a583(0x1fb)]('adzanCountdownDurations',JSON[_0x36a583(0x27d)](adzanCountdownDurations));else{if(_0x53506b===_0x36a583(0x1e0))window['iqamahCountdownDurations']=window[_0x36a583(0x21b)]||{},iqamahCountdownDurations[_0x3aad53]=_0x5b2f86,localStorage[_0x36a583(0x1fb)](_0x36a583(0x21b),JSON['stringify'](iqamahCountdownDurations));else _0x53506b==='overlayDuration'&&(window[_0x36a583(0x26d)]=window[_0x36a583(0x26d)]||{},overlayBlackDurations[_0x3aad53]=_0x5b2f86,localStorage[_0x36a583(0x1fb)](_0x36a583(0x26d),JSON[_0x36a583(0x27d)](overlayBlackDurations)));}}var _0x1b7fab={'default':_0x5f5267(0x1ec),'emerald':_0x5f5267(0x1de),'royal':_0x5f5267(0x24f),'burgundy':_0x5f5267(0x220),'golden':'#d4ac0d','teal':'#17a589','slate':_0x5f5267(0x248),'copper':'#ca6f1e'};function _0x17770e(_0x45dae0){var _0x1b3706=_0x5f5267,_0x24edde=_0x1b7fab[_0x45dae0]||_0x45dae0;if(typeof changeThemeColor===_0x1b3706(0x1ce))changeThemeColor(_0x24edde);}function _0x559a8d(_0x4d3f67,_0x386a2a){var _0x5eb830=_0x5f5267;if(!window[_0x5eb830(0x28e)])return;openAudioDB(function(_0x356938){var _0x4b6b32=_0x5eb830,_0x101b5a=_0x356938[_0x4b6b32(0x208)]('audioFiles','readonly'),_0x470243=_0x101b5a[_0x4b6b32(0x272)](_0x4b6b32(0x1fd))['get'](_0x4b6b32(0x1cf));_0x470243[_0x4b6b32(0x234)]=function(){var _0x3198bd=_0x4b6b32,_0x5944c6=_0x470243[_0x3198bd(0x256)]&&_0x470243[_0x3198bd(0x256)][_0x3198bd(0x1f4)]?_0x470243[_0x3198bd(0x256)][_0x3198bd(0x1f4)]:[];if(_0x5944c6[_0x3198bd(0x1ef)]>=0x5){_0x13dfb(_0x3198bd(0x258));return;}_0x5944c6[_0x3198bd(0x215)]({'name':_0x386a2a||_0x3198bd(0x216),'data':_0x4d3f67,'timestamp':Date[_0x3198bd(0x285)]()});var _0x92ee98=_0x356938[_0x3198bd(0x208)](_0x3198bd(0x1fd),_0x3198bd(0x296));_0x92ee98['objectStore'](_0x3198bd(0x1fd))[_0x3198bd(0x249)]({'id':_0x3198bd(0x1cf),'data':_0x5944c6}),_0x92ee98['oncomplete']=function(){var _0x154de9=_0x3198bd;if(window[_0x154de9(0x21c)])settings[_0x154de9(0x1fa)]=_0x5944c6;if(typeof updateImagesList==='function')updateImagesList();if(typeof loadMainCarousel===_0x154de9(0x1ce))loadMainCarousel();_0x205051();};};});}function _0x2ffcee(_0x2708b2){var _0x3d89c8=_0x5f5267,_0x6de955=parseInt(_0x2708b2,0xa);if(isNaN(_0x6de955)||typeof openAudioDB!==_0x3d89c8(0x1ce))return;openAudioDB(function(_0x492889){var _0x166237=_0x3d89c8,_0x135ca0=_0x492889['transaction'](_0x166237(0x1fd),_0x166237(0x233)),_0x36e18b=_0x135ca0[_0x166237(0x272)](_0x166237(0x1fd))[_0x166237(0x23e)]('uploadedImages_meta');_0x36e18b['onsuccess']=function(){var _0x1723fa=_0x166237,_0x1365d5=_0x36e18b[_0x1723fa(0x256)]&&_0x36e18b[_0x1723fa(0x256)][_0x1723fa(0x1f4)]?_0x36e18b[_0x1723fa(0x256)]['data']:[];if(_0x6de955<0x0||_0x6de955>=_0x1365d5['length'])return;_0x1365d5['splice'](_0x6de955,0x1);var _0xd95f60=_0x492889[_0x1723fa(0x208)](_0x1723fa(0x1fd),_0x1723fa(0x296));_0xd95f60['objectStore'](_0x1723fa(0x1fd))[_0x1723fa(0x249)]({'id':'uploadedImages_meta','data':_0x1365d5}),_0xd95f60['oncomplete']=function(){var _0x371ce8=_0x1723fa;if(window[_0x371ce8(0x21c)])settings[_0x371ce8(0x1fa)]=_0x1365d5;if(typeof updateImagesList===_0x371ce8(0x1ce))updateImagesList();if(typeof loadMainCarousel===_0x371ce8(0x1ce))loadMainCarousel();_0x205051();};};});}function _0x297f3a(_0x45f72c,_0xf8e0a6,_0x1cd81e){var _0x10233e=_0x5f5267,_0x5a10b5={'adzan':_0x10233e(0x21d),'pre-adzan':_0x10233e(0x299),'alarm':'audioBeep'},_0x3fb010=_0x5a10b5[_0x45f72c];if(!_0x3fb010||typeof saveAudioToDB!=='function')return;var _0x5d68e2=_0x17c3aa[_0x3fb010],_0x3b7f84=_0xefb2bd[_0x3fb010];fetch(_0xf8e0a6)[_0x10233e(0x23f)](function(_0x897543){var _0xaed760=_0x10233e;return _0x897543[_0xaed760(0x237)]();})[_0x10233e(0x23f)](function(_0xdfe870){var _0x1faee4=_0x10233e,_0x450134=new FileReader();_0x450134[_0x1faee4(0x225)]=function(_0x108d4b){var _0x275070=_0x1faee4,_0x43ae6b=_0x108d4b[_0x275070(0x1d0)][_0x275070(0x256)];saveAudioToDB(_0x5d68e2,_0x43ae6b,_0x1cd81e||'audio-hp.mp3',function(_0x29300f){var _0x15846b=_0x275070;if(!_0x29300f){_0x13dfb('Gagal\x20simpan\x20audio\x20dari\x20HP\x20ke\x20IndexedDB.');return;}var _0x47ade0=document['getElementById'](_0x3fb010);_0x47ade0&&(_0x47ade0[_0x15846b(0x1c8)]=_0x43ae6b,_0x47ade0[_0x15846b(0x1d4)]());var _0x1096c9=document[_0x15846b(0x1ed)](_0x3b7f84);if(_0x1096c9)_0x1096c9[_0x15846b(0x1fe)]=_0x15846b(0x1f7)+(_0x1cd81e||_0x15846b(0x289))+_0x15846b(0x255);_0x205051();});},_0x450134[_0x1faee4(0x201)](_0xdfe870);})[_0x10233e(0x21a)](function(_0x217a50){var _0x203aec=_0x10233e;_0x13dfb('Gagal\x20mengunduh\x20audio\x20dari\x20HP:',_0x217a50&&_0x217a50[_0x203aec(0x1d8)]?_0x217a50[_0x203aec(0x1d8)]:_0x217a50);});}function _0x3169f1(_0x7b9167){var _0x29d1c7=_0x5f5267,_0x3a5053=_0x347141[_0x7b9167],_0x5cc919=_0x17c3aa[_0x7b9167],_0x6f3933=_0xefb2bd[_0x7b9167];if(!_0x3a5053||typeof openAudioDB!==_0x29d1c7(0x1ce))return;openAudioDB(function(_0x99a29b){var _0x19d62b=_0x29d1c7,_0x360fb8=_0x99a29b[_0x19d62b(0x208)](_0x19d62b(0x1fd),_0x19d62b(0x296));_0x360fb8[_0x19d62b(0x272)]('audioFiles')['delete'](_0x5cc919),_0x360fb8[_0x19d62b(0x25e)]=function(){var _0x52d30f=_0x19d62b,_0x33b787=document[_0x52d30f(0x1ed)](_0x7b9167);_0x33b787&&(_0x33b787[_0x52d30f(0x1c8)]=_0x3a5053,_0x33b787[_0x52d30f(0x1d4)]());var _0x10648d=document[_0x52d30f(0x1ed)](_0x6f3933);if(_0x10648d)_0x10648d[_0x52d30f(0x1fe)]=_0x52d30f(0x1f7)+_0x3a5053+_0x52d30f(0x271);_0x205051();};});}var _0x5e2556={'refreshPage':function(){var _0x518c28=_0x5f5267;_0x13dfb(_0x518c28(0x1e2)),setTimeout(function(){location['reload']();},0x12c);},'saveMasjidInfo':function(_0x4bdb83){var _0x2b4537=_0x5f5267;if(!_0x4bdb83)return;_0x45c0df(_0x4bdb83[_0x2b4537(0x24a)],_0x4bdb83[_0x2b4537(0x232)]);},'setRunningText':function(_0x2e0845){var _0x2aef99=_0x5f5267;if(!_0x2e0845)return;_0x1d1bdf(_0x2e0845[_0x2aef99(0x22b)]);},'setVolume':function(_0x56222f){var _0x3eddfd=_0x5f5267;if(!_0x56222f||!_0x56222f[_0x3eddfd(0x281)])return;var _0x38efff=_0x1fed5d[_0x56222f[_0x3eddfd(0x281)]];if(_0x38efff)_0x46096a(_0x38efff,_0x56222f[_0x3eddfd(0x266)]);},'toggleMute':function(){_0x15eb9f();},'setPrayerOffset':function(_0x3502e7){var _0xc18089=_0x5f5267;if(!_0x3502e7||!_0x3502e7[_0xc18089(0x240)])return;_0x1a3a8a(_0x3502e7['key'],_0x3502e7['delta']);},'setPrayerMinute':function(_0x4470f5){var _0x5ecdaf=_0x5f5267;if(!_0x4470f5||!_0x4470f5[_0x5ecdaf(0x240)]||!_0x4470f5[_0x5ecdaf(0x1d0)])return;_0xd81596(_0x4470f5[_0x5ecdaf(0x240)],_0x4470f5['target'],_0x4470f5[_0x5ecdaf(0x266)]);},'commitPrayerSettings':function(){var _0x24336c=_0x5f5267;if(typeof updatePrayerTimesUI===_0x24336c(0x1ce))updatePrayerTimesUI();},'setTheme':function(_0x3843bf){_0x17770e(_0x3843bf);},'addMediaFromUrl':function(_0x192067){var _0x5ad6a4=_0x5f5267;if(!_0x192067||!_0x192067[_0x5ad6a4(0x2a1)]||!_0x192067[_0x5ad6a4(0x287)])return;if(_0x192067['kind']===_0x5ad6a4(0x259))_0x559a8d(_0x192067[_0x5ad6a4(0x2a1)],_0x192067['name']);else _0x192067['kind']===_0x5ad6a4(0x230)&&_0x297f3a(_0x192067['target'],_0x192067[_0x5ad6a4(0x2a1)],_0x192067['name']);},'deleteMedia':function(_0x1cf570){var _0x3bb0bd=_0x5f5267;if(!_0x1cf570||!_0x1cf570[_0x3bb0bd(0x287)])return;if(_0x1cf570[_0x3bb0bd(0x287)]===_0x3bb0bd(0x259)&&_0x1cf570['id']!=null)_0x2ffcee(_0x1cf570['id']);else{if(_0x1cf570[_0x3bb0bd(0x287)]===_0x3bb0bd(0x230)&&_0x1cf570['target']){var _0x46c4a5={'adzan':'audioAdzan','pre-adzan':_0x3bb0bd(0x299),'alarm':'audioBeep'},_0x3f7499=_0x46c4a5[_0x1cf570['target']];if(_0x3f7499)_0x3169f1(_0x3f7499);}}}};function _0x1f9e9a(_0x3fa077){var _0x2e6557=_0x5f5267;if(!_0x3fa077)return;try{if(_0x3fa077[_0x2e6557(0x287)]===_0x2e6557(0x266)&&_0x3fa077[_0x2e6557(0x28c)]){var _0x4b497a=_0x5e2556[_0x3fa077[_0x2e6557(0x28c)]];if(_0x4b497a)_0x4b497a(_0x3fa077[_0x2e6557(0x22e)]);else _0x13dfb(_0x2e6557(0x284),_0x3fa077[_0x2e6557(0x28c)]);}}catch(_0x1d2cc7){console[_0x2e6557(0x251)](_0x2e6557(0x1c7),_0x1d2cc7);}setTimeout(_0x205051,0xfa);}function _0x79cdb1(){var _0x33dae9=_0x5f5267,_0x4c71d3=_0x193491[_0x33dae9(0x295)](_0x33dae9(0x28f))[_0x33dae9(0x223)](_0x1af662)[_0x33dae9(0x295)](_0x33dae9(0x26e));_0x16eacf=_0x4c71d3['onSnapshot'](function(_0x2e6268){var _0x6cf218=_0x33dae9;_0x2e6268['docChanges']()[_0x6cf218(0x278)](function(_0x28e52d){var _0x392743=_0x6cf218;_0x28e52d[_0x392743(0x281)]===_0x392743(0x1d6)&&(_0x1f9e9a(_0x28e52d[_0x392743(0x223)]['data']()),_0x28e52d[_0x392743(0x223)]['ref'][_0x392743(0x1e3)]()[_0x392743(0x21a)](function(){}));});});if(_0x507f4b)_0x507f4b();_0x507f4b=_0x193491['collection']('devices')[_0x33dae9(0x223)](_0x1af662)['onSnapshot'](function(_0x295dd6){var _0xf782f6=_0x33dae9,_0x5e0261=_0x295dd6['data']();if(_0x5e0261&&_0x5e0261[_0xf782f6(0x212)]===![])_0xc49bcd();}),_0x205051(),_0x1a9769(),setInterval(function(){var _0x363898=_0x33dae9;_0x193491[_0x363898(0x295)](_0x363898(0x28f))[_0x363898(0x223)](_0x1af662)[_0x363898(0x29b)]({'lastSeenTv':_0x425353[_0x363898(0x1f9)]()})['catch'](function(){});},0x4e20),_0x13dfb(_0x33dae9(0x235),_0x1af662);}function _0x1a9769(){var _0x3d3a27=_0x5f5267;_0x193491[_0x3d3a27(0x295)](_0x3d3a27(0x28f))[_0x3d3a27(0x223)](_0x1af662)['set']({'catalog':[]},{'merge':!![]});}function _0x4b29e0(){return null;}function _0x205051(){var _0x34b553=_0x5f5267;if(!_0x1af662)return;var _0x5ecf93=window[_0x34b553(0x21c)]||{},_0x4eef11={},_0x56002c={},_0x561b4d={},_0x3d7a46=window['adzanSchedule']||{},_0xdf0a=window[_0x34b553(0x20a)]||{},_0x5be48b=window[_0x34b553(0x29e)]||{},_0x2aedc7=window['iqamahCountdownDurations']||{},_0x14562a=window[_0x34b553(0x26d)]||{};for(var _0x5ae1fa in _0x3f76c9){if(!_0x3f76c9['hasOwnProperty'](_0x5ae1fa))continue;var _0x157330=_0x3f76c9[_0x5ae1fa];_0x4eef11[_0x157330]=_0x3d7a46[_0x5ae1fa]||_0x34b553(0x239),_0x56002c[_0x157330]=_0xdf0a[_0x5ae1fa]||0x0,_0x561b4d[_0x157330]={'countdownBefore':_0x5be48b[_0x5ae1fa]!=null?_0x5be48b[_0x5ae1fa]:0xa,'iqamahDuration':_0x2aedc7[_0x5ae1fa]!=null?_0x2aedc7[_0x5ae1fa]:0x19,'overlayDuration':_0x14562a[_0x5ae1fa]!=null?_0x14562a[_0x5ae1fa]:0xf};}var _0xfb0593={'pre-adzan':parseInt(localStorage['getItem'](_0x34b553(0x22c))||'80',0xa),'adzan':parseInt(localStorage['getItem'](_0x34b553(0x29f))||_0x34b553(0x1dd),0xa),'alarm':parseInt(localStorage['getItem'](_0x34b553(0x1e1))||'80',0xa)},_0x23c7f3={'ts':Date['now'](),'masjidName':_0x5ecf93['masjidName']||'Mahallah\x20TV','masjidLocation':_0x5ecf93[_0x34b553(0x236)]||'','cityApi':'','template':'default','imsakEnabled':!![],'syuruqEnabled':!![],'dhuhaEnabled':!![],'modeJumat':typeof isJumat===_0x34b553(0x1ce)?!!isJumat():![],'muteAll':localStorage['getItem']('ftv_muteAll')==='true','audioVolume':_0xfb0593,'preAdzanSource':_0x34b553(0x268),'preAdzanYoutubeUrl':'','popupPosition':_0x34b553(0x1c9),'popupScale':0x64,'globalFontScale':0x64,'prayerTimes':_0x4eef11,'prayerOffsets':_0x56002c,'prayerSettings':_0x561b4d,'sleepModeEnabled':![],'overlayActive':![],'runningText':_0x5ecf93[_0x34b553(0x209)]||'','runningTextSpeed':0x3c,'bgSpeed':0x8,'bgMode':_0x34b553(0x1d7),'papanEnabled':![],'papanTitle':'','papanDesc':'','kajianEnabled':![],'hideCards':![],'kajianPemateri':'','kajianPemateriDelay':0x5,'kajianPemateriDuration':0x1e,'kajianRibbonTema':0x0,'kajianRibbonFontSize':0x11,'camTransition':'static','donasiEnabled':![],'donasiJudul':'','donasiDesc':'','currentTheme':_0x34b553(0x268),'islamicEvents':[],'adzanModeEnabled':![],'kasAyatEnabled':![],'kasMasjidView':'minggu','kaRotationDuration':0x8,'kasMasjidEntries':[],'mediaSummary':null};_0x193491[_0x34b553(0x295)](_0x34b553(0x28f))[_0x34b553(0x223)](_0x1af662)['set']({'state':_0x23c7f3},{'merge':!![]})[_0x34b553(0x21a)](function(_0x252c0b){var _0x31e1fa=_0x34b553;console[_0x31e1fa(0x251)](_0x31e1fa(0x20e),_0x252c0b);}),typeof openAudioDB===_0x34b553(0x1ce)&&openAudioDB(function(_0x5f5a63){var _0x3c66b5=_0x34b553,_0x1da90c=_0x5f5a63[_0x3c66b5(0x208)]('audioFiles','readonly'),_0x209351=_0x1da90c[_0x3c66b5(0x272)]('audioFiles')[_0x3c66b5(0x23e)](_0x3c66b5(0x1cf));_0x209351[_0x3c66b5(0x234)]=function(){var _0x5a672f=_0x3c66b5,_0x4a497a=_0x209351['result']&&_0x209351[_0x5a672f(0x256)][_0x5a672f(0x1f4)]?_0x209351[_0x5a672f(0x256)][_0x5a672f(0x1f4)]:[],_0x2874bd=_0x4a497a[_0x5a672f(0x217)](function(_0x5e1a6a,_0x1db2cb){var _0x31762b=_0x5a672f;return{'id':_0x1db2cb,'name':_0x5e1a6a[_0x31762b(0x24a)]||_0x31762b(0x24c)+(_0x1db2cb+0x1),'thumb':_0x5e1a6a[_0x31762b(0x1f4)]};});_0x193491[_0x5a672f(0x295)]('devices')['doc'](_0x1af662)[_0x5a672f(0x1d1)]({'state.mediaSummary':{'backgrounds':_0x2874bd,'audio':{'adzan':[],'pre-adzan':[],'alarm':[]},'donasiQr':{'hasFile':![]}}},{'merge':!![]})[_0x5a672f(0x21a)](function(){});};});}function _0x13518b(){var _0x20f514=_0x5f5267;if(!_0x253093())return;var _0x1e9802=localStorage[_0x20f514(0x246)](_0x586609),_0x3da80f=localStorage['getItem'](_0x4f2e62)===_0x20f514(0x1e8);_0x1e9802&&_0x3da80f&&(_0x1af662=_0x1e9802,_0x193491['collection'](_0x20f514(0x28f))['doc'](_0x1af662)[_0x20f514(0x23e)]()['then'](function(_0x1c1de6){var _0x40d89b=_0x20f514,_0x5a7f5b=_0x1c1de6[_0x40d89b(0x1f4)]();!_0x5a7f5b||_0x5a7f5b[_0x40d89b(0x212)]===![]?_0xc49bcd():(_0x79cdb1(),_0xd2c22());})[_0x20f514(0x21a)](function(){_0x79cdb1(),_0xd2c22();}));}function _0x5b2066(){var _0x512dd3=_0x5f5267;if(!_0x193491&&!_0x253093()){alert(_0x512dd3(0x298));return;}localStorage[_0x512dd3(0x246)](_0x4f2e62)===_0x512dd3(0x1e8)&&_0x1af662?_0x4844a7():_0xb66f25();}function _0x56e264(){var _0x153948=_0x5f5267,_0x10fc24=document[_0x153948(0x1ed)](_0x153948(0x25a));if(!_0x10fc24)return;var _0x36ec1a=localStorage['getItem'](_0x4f2e62)==='true';_0x10fc24[_0x153948(0x1fe)]=_0x36ec1a?_0x153948(0x1cc):_0x153948(0x283),_0x10fc24[_0x153948(0x20d)][_0x153948(0x277)]=_0x36ec1a?_0x153948(0x286):'#94a3b8';}document[_0x5f5267(0x28d)]===_0x5f5267(0x293)?document[_0x5f5267(0x1f8)](_0x5f5267(0x1c6),_0x13518b):_0x13518b(),window['FirebaseRemoteBridge']={'getDeviceId':function(){return _0x1af662;},'forceRepair':_0xc49bcd,'openPairing':_0x5b2066,'refreshPairingStatus':_0x56e264};}()));function _0x1629(){var _0x5eae3c=['<div\x20class=\x22frb-status\x22><span\x20class=\x22frb-dot\x22></span>\x20Menunggu\x20HP\x20terhubung...</div>','alamatMasjidInput','doc','ftv_paired','onload','Gagal\x20memutuskan\x20koneksi.\x20Cek\x20koneksi\x20internet.','addData','<div\x20class=\x22frb-url\x22>','\x20.frb-danger-btn{margin-top:26px;background:rgba(227,93,93,.15);','<div\x20class=\x22frb-sub\x22>Buka\x20','text','vol_audioShalawat','font-size:1rem;cursor:pointer;}','payload','[FRB]','audio','onSnapshot','location','readonly','onsuccess','Bridge\x20aktif.\x20Mendengarkan\x20perintah\x20untuk\x20deviceId=','masjidAddress','blob','frb-close-btn','--:--','QR\x20Pairing','labelAdzan','prototype','[FRB]\x20Firebase/Firestore\x20SDK\x20belum\x20dimuat.','get','then','key','152253WXDeSo','customAudio_rooster','380zzamuQ','36989PtiGmp','<div\x20class=\x22frb-qr\x22>','getItem','initializeApp','#5d6d7e','put','name','qrcode-lib.js\x20tidak\x20termuat,\x20QR\x20tidak\x20bisa\x20dibuat.','Gambar\x20','appendChild','rooster.mp3','#2980b9','reload','error','frb-pairing-style','@keyframes\x20frb-blink{0%,100%{opacity:1}50%{opacity:.25}}','<button\x20class=\x22frb-close\x22\x20id=\x22frb-close-btn\x22\x20title=\x22Tutup\x22>✕</button>','\x20(custom,\x20dari\x20HP)','result','dzuhur','Maksimal\x205\x20gambar,\x20upload\x20dari\x20HP\x20diabaikan.','image','pairing-status-text','ftv_preMute_','random','audioBeep','oncomplete','reset','volId','<div\x20class=\x22frb-box\x22>','imsak','ftv_muteAll','2866472Wiscqb','firestore','value','div','default','audioRooster','<div\x20class=\x22frb-title\x22>✅\x20TV\x20Terhubung\x20ke\x20HP</div>','masjidName','border:1px\x20solid\x20#e35d5d;color:#ff8a8a;padding:12px\x2022px;border-radius:12px;font-size:.9rem;','overlayBlackDurations','commands','countdownBefore','pairing','\x20(default)','objectStore','click','AIzaSyAsgeM5Bh-imX7495mMJ1JJ-AkuyrzmA7c','syuruq','881994rJCyxX','color','forEach','customAudio_adzan','apps','createImgTag','\x20di\x20HP,\x20lalu\x20masukkan\x20kode\x20di\x20bawah,\x20atau\x20scan\x20QR\x20code.\x20Bisa\x20ditutup\x20kapan\x20saja\x20kalau\x20belum\x20ingin\x20pairing.</div>','stringify','currentPrayer','<div\x20class=\x22frb-code\x22>','4725424bxfgBV','type','log','⚪\x20Belum\x20ada\x20HP\x20terhubung','Aksi\x20tidak\x20dikenal\x20/\x20belum\x20didukung\x20app\x20ini:','now','#4ade80','kind','removeItem','audio-hp.mp3','runningText1','remove','action','readyState','openAudioDB','devices','firebase','valVolShalawat','color:#fff;font-family:Poppins,Arial,sans-serif;text-align:center;padding:24px;}','loading','\x20.frb-status{margin-top:22px;font-size:.85rem;color:#4ade80;display:flex;','collection','readwrite','xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx','Gagal\x20terhubung\x20ke\x20server.\x20Cek\x20koneksi\x20internet\x20lalu\x20coba\x20lagi.','audioShalawat','make','update','isya','valId','adzanCountdownDurations','vol_audioAdzan','ashar','url','Pairing\x20berhasil.\x20deviceId=','undefined','DOMContentLoaded','[FRB]\x20Gagal\x20eksekusi\x20perintah:','src','right','border:1px\x20solid\x20rgba(255,255,255,.18);color:#fff;width:38px;height:38px;border-radius:10px;','font-weight:600;cursor:pointer;}','✅\x20TV\x20sudah\x20terhubung\x20ke\x20HP','\x20.frb-qr\x20img{display:block;width:200px;height:200px;}','function','uploadedImages_meta','target','set','innerHTML','\x20.frb-code{font-size:3.4rem;font-weight:800;letter-spacing:.18em;','load','labelRooster','added','fade','message','\x20.frb-qr{background:#fff;padding:10px;border-radius:12px;}','<div\x20class=\x22frb-title\x22>📱\x20Hubungkan\x20Kontrol\x20HP</div>','https://mahallahtv.blogspot.com','hasOwnProperty','100','#27ae60','11425348DfGysr','iqamahDuration','vol_audioBeep','Perintah\x20refresh\x20diterima\x20dari\x20HP.\x20Me-reload\x20halaman...','delete','call','\x20.frb-dot{width:8px;height:8px;border-radius:50%;background:#4ade80;','<div\x20class=\x22frb-sub\x22>Kontrol\x20dari\x20HP\x20sudah\x20aktif\x20untuk\x20TV\x20ini.\x20Putuskan\x20koneksi\x20kalau\x20Anda\x20ingin\x20menghubungkan\x20HP\x20lain.</div>','27qaGZAd','true','concat','labelShalawat','\x20.frb-close{position:absolute;top:22px;right:26px;background:rgba(255,255,255,.08);','#005a31','getElementById','Putuskan\x20koneksi\x20HP\x20dari\x20TV\x20ini?\x20Anda\x20perlu\x20pairing\x20ulang\x20untuk\x20menghubungkan\x20HP.','length','1064313843618','valVolAdzan','\x20.frb-sub{font-size:1rem;color:#cbd5e1;margin-bottom:28px;max-width:520px;}','<button\x20class=\x22frb-danger-btn\x22\x20id=\x22frb-unpair-btn\x22>🔌\x20Putuskan\x20Koneksi\x20HP</button>','data','frb-unpair-btn','volRooster','File\x20aktif:\x20','addEventListener','serverTimestamp','uploadedImages','setItem','FieldValue','audioFiles','textContent','</div>','customAudio_beep','readAsDataURL','createElement','display:flex;align-items:center;justify-content:center;flex-direction:column;','mahallahtvpro.firebasestorage.app','false','\x20.frb-url{margin-top:22px;font-size:.85rem;color:#94a3b8;}','?pair=','transaction','runningText','prayerOffsets','body','4KsShpj','style','[FRB]\x20Gagal\x20push\x20state:','\x20.frb-title{font-size:1.6rem;font-weight:700;margin-bottom:6px;color:#FFD700;}','namaMasjidInput','10FTAgTd','paired','Mahallah\x20TV','apply','push','gambar-hp.jpg','map','volAdzan','volShalawat','catch','iqamahCountdownDurations','settings','audioAdzan','108848fOKtPT','toLowerCase','#8e1a3b'];_0x1629=function(){return _0x5eae3c;};return _0x1629();}
+/* ============================================================
+   FIREBASE REMOTE BRIDGE — firebase-remote-bridge.js (ES5)
+   Versi untuk "Aplikasi Mahallah TV" (MAHALLAHTVMASJID).
+
+   Ini adalah adaptasi dari firebase-remote-bridge.js versi Mahallah TV
+   PRO (lihat assets.zip), memakai PROTOKOL & PROJECT FIREBASE YANG SAMA
+   supaya bisa dipasangkan (pairing) dengan HALAMAN KONTROL HP YANG SAMA
+   (control page Blogger: mahallahtv.blogspot.com).
+
+   Karena aplikasi ini (versi dasar) tidak punya semua fitur versi PRO
+   (tidak ada pilihan kota, template layout, mode kajian, donasi, kas
+   masjid, tema multi-warna, dsb), hanya aksi yang MEMANG ADA fiturnya
+   di aplikasi ini yang diimplementasikan di VALUE_HANDLERS di bawah.
+   Aksi lain yang dikirim dari HP (mis. setTemplate, toggleDonasiEnabled)
+   akan otomatis diabaikan dengan log "Aksi tidak dikenal" — TIDAK
+   menyebabkan error apapun di TV.
+
+   Sisi TV: pairing dengan HP + eksekusi perintah dari control.html
+   Membutuhkan (dimuat SEBELUM file ini, via <script> di index.html):
+     - firebase-app-compat.js
+     - firebase-firestore-compat.js
+     - qrcode-lib.js (untuk membuat QR pairing secara lokal/offline)
+
+   Struktur Firestore (SAMA dengan versi PRO):
+     pairing/{kode6digit}          -> { deviceId, createdAt }
+     devices/{deviceId}            -> { paired, createdAt, pairedAt,
+                                         lastSeenTv, state:{...}, catalog:[...] }
+     devices/{deviceId}/commands/* -> { kind, code|action, payload, createdAt }
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  // ── Project Firebase: HARUS SAMA dengan yang dipakai control page HP ──
+  var FIREBASE_CONFIG = {
+    apiKey: "AIzaSyAsgeM5Bh-imX7495mMJ1JJ-AkuyrzmA7c",
+    authDomain: "mahallahtvpro.firebaseapp.com",
+    projectId: "mahallahtvpro",
+    storageBucket: "mahallahtvpro.firebasestorage.app",
+    messagingSenderId: "1064313843618",
+    appId: "1:1064313843618:web:53f8261478f8301cfdccfb"
+  };
+
+  var CONTROL_URL = 'https://mahallahtv.blogspot.com';
+
+  var LS_DEVICE_ID = 'ftv_deviceId';
+  var LS_PAIRED    = 'ftv_paired';
+
+  var db = null;
+  var FieldValue = null;
+  var deviceId = null;
+  var pairingCode = null;
+  var unsubCommands = null;
+  var unsubStatus = null;
+
+  function log() {
+    var a = ['[FRB]'].concat(Array.prototype.slice.call(arguments));
+    console.log.apply(console, a);
+  }
+
+  function uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      var r = (Math.random() * 16) | 0;
+      var v = c === 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  }
+
+  function randomPairCode() {
+    return String(Math.floor(100000 + Math.random() * 900000)); // 6 digit
+  }
+
+  // ===================== Overlay Pairing (UI) =====================
+  var OVERLAY_ID = 'frb-pairing-overlay';
+
+  function injectPairingStyle() {
+    if (document.getElementById('frb-pairing-style')) return;
+    var s = document.createElement('style');
+    s.id = 'frb-pairing-style';
+    s.textContent =
+      '#' + OVERLAY_ID + '{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;z-index:99999;background:#0f172a;' +
+      'display:flex;align-items:center;justify-content:center;flex-direction:column;' +
+      'color:#fff;font-family:Poppins,Arial,sans-serif;text-align:center;padding:24px;}' +
+      '#' + OVERLAY_ID + ' .frb-title{font-size:1.6rem;font-weight:700;margin-bottom:6px;color:#FFD700;}' +
+      '#' + OVERLAY_ID + ' .frb-sub{font-size:1rem;color:#cbd5e1;margin-bottom:28px;max-width:520px;}' +
+      '#' + OVERLAY_ID + ' .frb-box{display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center;}' +
+      '#' + OVERLAY_ID + ' .frb-code{font-size:3.4rem;font-weight:800;letter-spacing:.18em;' +
+      'background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);' +
+      'border-radius:16px;padding:18px 28px;color:#FFD700;font-family:monospace;}' +
+      '#' + OVERLAY_ID + ' .frb-qr{background:#fff;padding:10px;border-radius:12px;}' +
+      '#' + OVERLAY_ID + ' .frb-qr img{display:block;width:200px;height:200px;}' +
+      '#' + OVERLAY_ID + ' .frb-url{margin-top:22px;font-size:.85rem;color:#94a3b8;}' +
+      '#' + OVERLAY_ID + ' .frb-status{margin-top:22px;font-size:.85rem;color:#4ade80;display:flex;' +
+      'align-items:center;gap:8px;}' +
+      '#' + OVERLAY_ID + ' .frb-dot{width:8px;height:8px;border-radius:50%;background:#4ade80;' +
+      'animation:frb-blink 1.4s infinite;}' +
+      '@keyframes frb-blink{0%,100%{opacity:1}50%{opacity:.25}}' +
+      '#' + OVERLAY_ID + ' .frb-close{position:absolute;top:22px;right:26px;background:rgba(255,255,255,.08);' +
+      'border:1px solid rgba(255,255,255,.18);color:#fff;width:38px;height:38px;border-radius:10px;' +
+      'font-size:1rem;cursor:pointer;}' +
+      '#' + OVERLAY_ID + ' .frb-danger-btn{margin-top:26px;background:rgba(227,93,93,.15);' +
+      'border:1px solid #e35d5d;color:#ff8a8a;padding:12px 22px;border-radius:12px;font-size:.9rem;' +
+      'font-weight:600;cursor:pointer;}';
+    document.head.appendChild(s);
+  }
+
+  function buildQrImgTag(text) {
+    // QR dibuat 100% lokal (offline) pakai qrcode-lib.js, jadi tidak
+    // bergantung pada API pihak ketiga yang mungkin diblokir di jaringan TV.
+    try {
+      if (typeof qrcode !== 'function') {
+        log('qrcode-lib.js tidak termuat, QR tidak bisa dibuat.');
+        return '';
+      }
+      var qr = qrcode(0, 'M');
+      qr.addData(text);
+      qr.make();
+      return qr.createImgTag(6, 8, 'QR Pairing');
+    } catch (e) {
+      log('Gagal membuat QR: ' + (e && e.message ? e.message : e));
+      return '';
+    }
+  }
+
+  function showPairingOverlay(code) {
+    injectPairingStyle();
+    hidePairingOverlay();
+    var pairUrl = CONTROL_URL + '?pair=' + code;
+    var qrTag = buildQrImgTag(pairUrl);
+
+    var div = document.createElement('div');
+    div.id = OVERLAY_ID;
+    div.innerHTML =
+      '<button class="frb-close" id="frb-close-btn" title="Tutup">\u2715</button>' +
+      '<div class="frb-title">\uD83D\uDCF1 Hubungkan Kontrol HP</div>' +
+      '<div class="frb-sub">Buka ' + CONTROL_URL + ' di HP, lalu masukkan kode di bawah, atau scan QR code. Bisa ditutup kapan saja kalau belum ingin pairing.</div>' +
+      '<div class="frb-box">' +
+        '<div class="frb-code">' + code + '</div>' +
+        (qrTag ? '<div class="frb-qr">' + qrTag + '</div>' : '') +
+      '</div>' +
+      '<div class="frb-url">' + CONTROL_URL + '</div>' +
+      '<div class="frb-status"><span class="frb-dot"></span> Menunggu HP terhubung...</div>';
+    document.body.appendChild(div);
+
+    var closeBtn = document.getElementById('frb-close-btn');
+    if (closeBtn) closeBtn.addEventListener('click', hidePairingOverlay);
+  }
+
+  function showPairedOverlay() {
+    injectPairingStyle();
+    hidePairingOverlay();
+
+    var div = document.createElement('div');
+    div.id = OVERLAY_ID;
+    div.innerHTML =
+      '<button class="frb-close" id="frb-close-btn" title="Tutup">\u2715</button>' +
+      '<div class="frb-title">\u2705 TV Terhubung ke HP</div>' +
+      '<div class="frb-sub">Kontrol dari HP sudah aktif untuk TV ini. Putuskan koneksi kalau Anda ingin menghubungkan HP lain.</div>' +
+      '<button class="frb-danger-btn" id="frb-unpair-btn">\uD83D\uDD0C Putuskan Koneksi HP</button>';
+    document.body.appendChild(div);
+
+    var closeBtn = document.getElementById('frb-close-btn');
+    if (closeBtn) closeBtn.addEventListener('click', hidePairingOverlay);
+
+    var unpairBtn = document.getElementById('frb-unpair-btn');
+    if (unpairBtn) unpairBtn.addEventListener('click', function () {
+      if (!confirm('Putuskan koneksi HP dari TV ini? Anda perlu pairing ulang untuk menghubungkan HP.')) return;
+      db.collection('devices').doc(deviceId).set({ paired: false }, { merge: true }).catch(function () {
+        alert('Gagal memutuskan koneksi. Cek koneksi internet.');
+      });
+    });
+  }
+
+  function hidePairingOverlay() {
+    var el = document.getElementById(OVERLAY_ID);
+    if (el) el.remove();
+  }
+
+  // ===================== Init Firebase =====================
+  function initFirebase() {
+    if (!window.firebase || !firebase.firestore) {
+      console.error('[FRB] Firebase/Firestore SDK belum dimuat.');
+      return false;
+    }
+    if (!firebase.apps || !firebase.apps.length) {
+      firebase.initializeApp(FIREBASE_CONFIG);
+    }
+    db = firebase.firestore();
+    FieldValue = firebase.firestore.FieldValue;
+    return true;
+  }
+
+  // ===================== Pairing Flow =====================
+  function startPairingFlow() {
+    deviceId = uuid();
+    pairingCode = randomPairCode();
+
+    db.collection('devices').doc(deviceId).set({
+      paired: false,
+      createdAt: FieldValue.serverTimestamp()
+    }, { merge: true });
+
+    db.collection('pairing').doc(pairingCode).set({
+      deviceId: deviceId,
+      createdAt: FieldValue.serverTimestamp()
+    });
+
+    // Kode pairing kadaluarsa otomatis setelah 10 menit kalau tidak dipakai
+    setTimeout(function () {
+      db.collection('pairing').doc(pairingCode).get().then(function (snap) {
+        if (snap.exists) db.collection('pairing').doc(pairingCode).delete();
+      });
+    }, 10 * 60 * 1000);
+
+    showPairingOverlay(pairingCode);
+    listenForPairingComplete();
+    publishCatalog();
+  }
+
+  function listenForPairingComplete() {
+    if (unsubStatus) unsubStatus();
+
+    unsubStatus = db.collection('devices').doc(deviceId).onSnapshot(function (snap) {
+      var data = snap.data();
+      if (!data) return;
+      var paired = data.paired;
+
+      if (paired === true && localStorage.getItem(LS_PAIRED) !== 'true') {
+        localStorage.setItem(LS_DEVICE_ID, deviceId);
+        localStorage.setItem(LS_PAIRED, 'true');
+        hidePairingOverlay();
+        db.collection('pairing').doc(pairingCode).delete().catch(function () {});
+        log('Pairing berhasil. deviceId=', deviceId);
+        startBridge();
+      } else if (paired === false && localStorage.getItem(LS_PAIRED) === 'true') {
+        log('HP memutuskan koneksi. Reset pairing...');
+        resetPairing();
+      }
+    });
+  }
+
+  function resetPairing() {
+    localStorage.removeItem(LS_DEVICE_ID);
+    localStorage.removeItem(LS_PAIRED);
+    if (unsubCommands) { unsubCommands(); unsubCommands = null; }
+    if (unsubStatus) { unsubStatus(); unsubStatus = null; }
+    location.reload();
+  }
+
+  // ===================== Util kecil khusus app ini =====================
+
+  // Urutan & nama kunci waktu sholat versi HP (Judul Kapital) <-> versi
+  // internal app ini (huruf kecil, "shubuh" bukan "fajr"/"subuh").
+  var PRAYER_KEY_MAP = {
+    Imsak: 'imsak', Shubuh: 'shubuh', Syuruq: 'syuruq', Dhuha: 'dhuha',
+    Dzuhur: 'dzuhur', Ashar: 'ashar', Maghrib: 'maghrib', Isya: 'isya'
+  };
+  var PRAYER_KEY_MAP_REV = (function () {
+    var r = {};
+    for (var k in PRAYER_KEY_MAP) if (PRAYER_KEY_MAP.hasOwnProperty(k)) r[PRAYER_KEY_MAP[k]] = k;
+    return r;
+  })();
+
+  // Mapping tipe volume dari HP (3 slider: pre-adzan/adzan/alarm) ke audio
+  // element di app ini (4 audio: shalawat/adzan/rooster/beep).
+  var VOLUME_TYPE_TO_AUDIO_ID = {
+    'pre-adzan': 'audioShalawat',
+    'adzan': 'audioAdzan',
+    'alarm': 'audioBeep'
+  };
+  var AUDIO_ID_TO_VOL_UI = {
+    audioShalawat: { volId: 'volShalawat', valId: 'valVolShalawat' },
+    audioAdzan:    { volId: 'volAdzan',    valId: 'valVolAdzan' },
+    audioRooster:  { volId: 'volRooster',  valId: 'valVolRooster' },
+    audioBeep:     { volId: 'volBeep',     valId: 'valVolBeep' }
+  };
+  var AUDIO_ID_TO_DBKEY = {
+    audioShalawat: 'customAudio_shalawat',
+    audioAdzan: 'customAudio_adzan',
+    audioRooster: 'customAudio_rooster',
+    audioBeep: 'customAudio_beep'
+  };
+  var AUDIO_ID_TO_DEFAULT_SRC = {
+    audioShalawat: 'shalawat.mp3',
+    audioAdzan: 'adzan.mp3',
+    audioRooster: 'rooster.mp3',
+    audioBeep: 'beep.mp3'
+  };
+  var AUDIO_ID_TO_LABEL = {
+    audioShalawat: 'labelShalawat',
+    audioAdzan: 'labelAdzan',
+    audioRooster: 'labelRooster',
+    audioBeep: 'labelBeep'
+  };
+
+  function remoteSetVolume(audioId, value) {
+    var v = parseInt(value, 10);
+    if (isNaN(v)) return;
+    if (typeof setAudioVolume === 'function') setAudioVolume(audioId, v);
+    var ui = AUDIO_ID_TO_VOL_UI[audioId];
+    if (ui) {
+      var slider = document.getElementById(ui.volId);
+      var val = document.getElementById(ui.valId);
+      if (slider) slider.value = v;
+      if (val) val.textContent = v;
+    }
+  }
+
+  // "Mute semua" tidak ada di app ini secara bawaan — disimulasikan dengan
+  // menyimpan volume sebelumnya lalu menurunkan ke 0 (dan sebaliknya).
+  function remoteToggleMute() {
+    var muted = localStorage.getItem('ftv_muteAll') === 'true';
+    var ids = ['audioShalawat', 'audioAdzan', 'audioRooster', 'audioBeep'];
+    if (!muted) {
+      ids.forEach(function (id) {
+        var current = localStorage.getItem('vol_' + id);
+        if (current == null) current = '100';
+        localStorage.setItem('ftv_preMute_' + id, current);
+        remoteSetVolume(id, 0);
+      });
+      localStorage.setItem('ftv_muteAll', 'true');
+    } else {
+      ids.forEach(function (id) {
+        var prev = localStorage.getItem('ftv_preMute_' + id);
+        remoteSetVolume(id, prev != null ? prev : 100);
+      });
+      localStorage.setItem('ftv_muteAll', 'false');
+    }
+  }
+
+  function remoteSaveMasjidInfo(name, address) {
+    if (!window.settings) return;
+    if (name != null) settings.masjidName = name || 'Mahallah TV';
+    if (address != null) settings.masjidAddress = address || '';
+    var nameInput = document.getElementById('namaMasjidInput'); if (nameInput && name != null) nameInput.value = settings.masjidName;
+    var addrInput = document.getElementById('alamatMasjidInput'); if (addrInput && address != null) addrInput.value = settings.masjidAddress;
+    var nameEl = document.getElementById('masjidName'); if (nameEl) nameEl.textContent = settings.masjidName;
+    var addrEl = document.getElementById('masjidAddress'); if (addrEl) addrEl.textContent = settings.masjidAddress;
+    if (typeof saveSettings === 'function') saveSettings();
+  }
+
+  function remoteSetRunningText(text) {
+    if (!window.settings || text == null) return;
+    settings.runningText = text;
+    var input = document.getElementById('runningText1'); if (input) input.value = text;
+    if (typeof saveSettings === 'function') saveSettings();
+    if (typeof updateRunningTextUI === 'function') updateRunningTextUI();
+  }
+
+  function remoteSetPrayerOffset(hpKey, delta) {
+    var key = PRAYER_KEY_MAP[hpKey] || String(hpKey).toLowerCase();
+    if (typeof window.currentPrayer === 'undefined' || typeof adjustOffset !== 'function') return;
+    window.currentPrayer = key;
+    if (delta === 'reset') {
+      adjustOffset(0); // amount === 0 berarti reset total (lihat adjustOffset di index.html)
+    } else {
+      adjustOffset(parseInt(delta, 10) || 0);
+    }
+  }
+
+  function remoteSetPrayerMinute(hpKey, target, value) {
+    var key = PRAYER_KEY_MAP[hpKey] || String(hpKey).toLowerCase();
+    var v = parseInt(value, 10);
+    if (isNaN(v) || v < 0) v = 0;
+    window.currentPrayer = key;
+    if (target === 'countdownBefore') {
+      window.adzanCountdownDurations = window.adzanCountdownDurations || {};
+      adzanCountdownDurations[key] = v;
+      localStorage.setItem('adzanCountdownDurations', JSON.stringify(adzanCountdownDurations));
+    } else if (target === 'iqamahDuration') {
+      window.iqamahCountdownDurations = window.iqamahCountdownDurations || {};
+      iqamahCountdownDurations[key] = v;
+      localStorage.setItem('iqamahCountdownDurations', JSON.stringify(iqamahCountdownDurations));
+    } else if (target === 'overlayDuration') {
+      window.overlayBlackDurations = window.overlayBlackDurations || {};
+      overlayBlackDurations[key] = v;
+      localStorage.setItem('overlayBlackDurations', JSON.stringify(overlayBlackDurations));
+    }
+    // App ini tidak punya field "jumatBefore" terpisah — diabaikan.
+  }
+
+  // Preset THEMES versi PRO (assets.zip) dipetakan ke satu warna solid
+  // representatif, karena app ini hanya punya satu color-picker tema
+  // (bukan sistem tema multi-elemen).
+  var THEME_ID_TO_HEX = {
+    default: '#005a31', emerald: '#27ae60', royal: '#2980b9',
+    burgundy: '#8e1a3b', golden: '#d4ac0d', teal: '#17a589',
+    slate: '#5d6d7e', copper: '#ca6f1e'
+  };
+
+  function remoteSetTheme(themeId) {
+    var hex = THEME_ID_TO_HEX[themeId] || themeId; // terima juga hex langsung
+    if (typeof changeThemeColor === 'function') changeThemeColor(hex);
+  }
+
+  // Upload gambar background/carousel dari HP: HP upload ke Cloudinary lalu
+  // kirim URL-nya ke sini. Karena <img> bisa langsung memuat URL remote,
+  // gambar TIDAK perlu diunduh ulang — cukup disimpan sebagai referensi URL,
+  // konsisten dengan cara kerja carousel gambar app ini (settings.uploadedImages).
+  function remoteAddImageFromUrl(url, name) {
+    if (!window.openAudioDB) return;
+    openAudioDB(function (db) {
+      var tx = db.transaction('audioFiles', 'readonly');
+      var req = tx.objectStore('audioFiles').get('uploadedImages_meta');
+      req.onsuccess = function () {
+        var images = (req.result && req.result.data) ? req.result.data : [];
+        if (images.length >= 5) {
+          log('Maksimal 5 gambar, upload dari HP diabaikan.');
+          return;
+        }
+        images.push({ name: name || 'gambar-hp.jpg', data: url, timestamp: Date.now() });
+        var saveTx = db.transaction('audioFiles', 'readwrite');
+        saveTx.objectStore('audioFiles').put({ id: 'uploadedImages_meta', data: images });
+        saveTx.oncomplete = function () {
+          if (window.settings) settings.uploadedImages = images;
+          if (typeof updateImagesList === 'function') updateImagesList();
+          if (typeof loadMainCarousel === 'function') loadMainCarousel();
+          pushState();
+        };
+      };
+    });
+  }
+
+  function remoteDeleteImage(idx) {
+    var i = parseInt(idx, 10);
+    if (isNaN(i) || typeof openAudioDB !== 'function') return;
+    openAudioDB(function (db) {
+      var tx = db.transaction('audioFiles', 'readonly');
+      var req = tx.objectStore('audioFiles').get('uploadedImages_meta');
+      req.onsuccess = function () {
+        var images = (req.result && req.result.data) ? req.result.data : [];
+        if (i < 0 || i >= images.length) return;
+        images.splice(i, 1);
+        var saveTx = db.transaction('audioFiles', 'readwrite');
+        saveTx.objectStore('audioFiles').put({ id: 'uploadedImages_meta', data: images });
+        saveTx.oncomplete = function () {
+          if (window.settings) settings.uploadedImages = images;
+          if (typeof updateImagesList === 'function') updateImagesList();
+          if (typeof loadMainCarousel === 'function') loadMainCarousel();
+          pushState();
+        };
+      };
+    });
+  }
+
+  // Upload audio dari HP (URL Cloudinary) → diunduh lalu disimpan ke
+  // IndexedDB sebagai data URL, supaya konsisten dengan penyimpanan audio
+  // upload manual di TV (saveAudioToDB) dan tetap ada walau offline.
+  function remoteAddAudioFromUrl(target, url, name) {
+    var audioIdMap = { adzan: 'audioAdzan', 'pre-adzan': 'audioShalawat', alarm: 'audioBeep' };
+    var audioId = audioIdMap[target];
+    if (!audioId || typeof saveAudioToDB !== 'function') return;
+    var dbKey = AUDIO_ID_TO_DBKEY[audioId];
+    var labelId = AUDIO_ID_TO_LABEL[audioId];
+
+    fetch(url).then(function (res) { return res.blob(); }).then(function (blob) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var dataUrl = e.target.result;
+        saveAudioToDB(dbKey, dataUrl, name || 'audio-hp.mp3', function (ok) {
+          if (!ok) { log('Gagal simpan audio dari HP ke IndexedDB.'); return; }
+          var audioEl = document.getElementById(audioId);
+          if (audioEl) { audioEl.src = dataUrl; audioEl.load(); }
+          var labelEl = document.getElementById(labelId);
+          if (labelEl) labelEl.textContent = 'File aktif: ' + (name || 'audio-hp.mp3') + ' (custom, dari HP)';
+          pushState();
+        });
+      };
+      reader.readAsDataURL(blob);
+    }).catch(function (e) {
+      log('Gagal mengunduh audio dari HP:', e && e.message ? e.message : e);
+    });
+  }
+
+  function remoteResetAudio(audioId) {
+    var defaultSrc = AUDIO_ID_TO_DEFAULT_SRC[audioId];
+    var dbKey = AUDIO_ID_TO_DBKEY[audioId];
+    var labelId = AUDIO_ID_TO_LABEL[audioId];
+    if (!defaultSrc || typeof openAudioDB !== 'function') return;
+    openAudioDB(function (db) {
+      var tx = db.transaction('audioFiles', 'readwrite');
+      tx.objectStore('audioFiles').delete(dbKey);
+      tx.oncomplete = function () {
+        var audioEl = document.getElementById(audioId);
+        if (audioEl) { audioEl.src = defaultSrc; audioEl.load(); }
+        var labelEl = document.getElementById(labelId);
+        if (labelEl) labelEl.textContent = 'File aktif: ' + defaultSrc + ' (default)';
+        pushState();
+      };
+    });
+  }
+
+  // ===================== Bridge (setelah paired) =====================
+  var VALUE_HANDLERS = {
+    refreshPage: function () {
+      log('Perintah refresh diterima dari HP. Me-reload halaman...');
+      setTimeout(function () { location.reload(); }, 300);
+    },
+
+    // ── Data Masjid ──
+    saveMasjidInfo: function (p) {
+      if (!p) return;
+      remoteSaveMasjidInfo(p.name, p.location);
+    },
+
+    // ── Running Text ──
+    setRunningText: function (p) {
+      if (!p) return;
+      remoteSetRunningText(p.text);
+    },
+
+    // ── Audio ──
+    setVolume: function (p) {
+      if (!p || !p.type) return;
+      var audioId = VOLUME_TYPE_TO_AUDIO_ID[p.type];
+      if (audioId) remoteSetVolume(audioId, p.value);
+    },
+    toggleMute: function () {
+      remoteToggleMute();
+    },
+
+    // ── Waktu Sholat (modal-box per kartu di HP) ──
+    setPrayerOffset: function (p) {
+      if (!p || !p.key) return;
+      remoteSetPrayerOffset(p.key, p.delta);
+    },
+    setPrayerMinute: function (p) {
+      if (!p || !p.key || !p.target) return;
+      remoteSetPrayerMinute(p.key, p.target, p.value);
+    },
+    commitPrayerSettings: function () {
+      // Di app ini perubahan menit sudah langsung tersimpan di setPrayerMinute,
+      // jadi commit tinggal memastikan tampilan waktu ikut ter-refresh.
+      if (typeof updatePrayerTimesUI === 'function') updatePrayerTimesUI();
+    },
+
+    // ── Tema (dipetakan ke satu color-picker) ──
+    setTheme: function (id) {
+      remoteSetTheme(id);
+    },
+
+    // ── Upload media dari HP (Cloudinary URL) ──
+    addMediaFromUrl: function (p) {
+      if (!p || !p.url || !p.kind) return;
+      if (p.kind === 'image') {
+        remoteAddImageFromUrl(p.url, p.name);
+      } else if (p.kind === 'audio') {
+        remoteAddAudioFromUrl(p.target, p.url, p.name);
+      }
+    },
+    deleteMedia: function (p) {
+      if (!p || !p.kind) return;
+      if (p.kind === 'image' && p.id != null) {
+        remoteDeleteImage(p.id);
+      } else if (p.kind === 'audio' && p.target) {
+        var audioIdMap = { adzan: 'audioAdzan', 'pre-adzan': 'audioShalawat', alarm: 'audioBeep' };
+        var audioId = audioIdMap[p.target];
+        if (audioId) remoteResetAudio(audioId);
+      }
+    }
+
+    // Catatan: aksi versi PRO yang TIDAK ada fiturnya di app ini (setCity,
+    // setTemplate, setPopupPosition/Scale, previewPopup, setFontScale,
+    // setPreAdzanSource/Url, setBgSettings, togglePapan/setPapanInfo,
+    // mode Kajian, mode Adzan, Kas Masjid & Ayat/Hadits, Donasi, custom
+    // color per elemen, Hari Besar Islam, sleepManual, Live Kamera) SENGAJA
+    // tidak didaftarkan di sini. Kalau HP mengirim aksi tsb, TV akan
+    // mencatatnya di console sebagai "Aksi tidak dikenal" dan mengabaikannya
+    // — tidak akan menyebabkan error di layar TV.
+  };
+
+  function handleCommand(cmd) {
+    if (!cmd) return;
+    try {
+      if (cmd.kind === 'value' && cmd.action) {
+        var handler = VALUE_HANDLERS[cmd.action];
+        if (handler) handler(cmd.payload);
+        else log('Aksi tidak dikenal / belum didukung app ini:', cmd.action);
+      }
+      // cmd.kind === 'code' (kode remote mentah dari katalog) tidak didukung
+      // di app ini karena tidak ada modul remote-codes.js/RemoteControl.
+    } catch (e) {
+      console.error('[FRB] Gagal eksekusi perintah:', e);
+    }
+    setTimeout(pushState, 250);
+  }
+
+  function startBridge() {
+    var commandsColl = db.collection('devices').doc(deviceId).collection('commands');
+
+    unsubCommands = commandsColl.onSnapshot(function (snap) {
+      snap.docChanges().forEach(function (change) {
+        if (change.type === 'added') {
+          handleCommand(change.doc.data());
+          change.doc.ref.delete().catch(function () {});
+        }
+      });
+    });
+
+    if (unsubStatus) unsubStatus();
+    unsubStatus = db.collection('devices').doc(deviceId).onSnapshot(function (snap) {
+      var data = snap.data();
+      if (data && data.paired === false) resetPairing();
+    });
+
+    pushState();
+    publishCatalog();
+    setInterval(function () {
+      db.collection('devices').doc(deviceId).update({
+        lastSeenTv: FieldValue.serverTimestamp()
+      }).catch(function () {});
+    }, 20000);
+
+    log('Bridge aktif. Mendengarkan perintah untuk deviceId=', deviceId);
+  }
+
+  function publishCatalog() {
+    // App ini tidak punya RemoteControl/remote-codes.js, jadi katalog
+    // "Kode Manual" di HP dikosongkan saja (bukan error, cuma daftar kosong).
+    db.collection('devices').doc(deviceId).set({ catalog: [] }, { merge: true });
+  }
+
+  function getUploadedImagesSummarySync() {
+    // Dipanggil dari pushState secara async (IndexedDB), lihat pushState().
+    return null;
+  }
+
+  function pushState() {
+    if (!deviceId) return;
+
+    var S_ = window.settings || {};
+    var prayerTimesHp = {};
+    var prayerOffsetsHp = {};
+    var prayerSettingsHp = {};
+    var schedule = window.adzanSchedule || {};
+    var offsets = window.prayerOffsets || {};
+    var cdA = window.adzanCountdownDurations || {};
+    var cdI = window.iqamahCountdownDurations || {};
+    var cdO = window.overlayBlackDurations || {};
+
+    for (var lowKey in PRAYER_KEY_MAP_REV) {
+      if (!PRAYER_KEY_MAP_REV.hasOwnProperty(lowKey)) continue;
+      var hpKey = PRAYER_KEY_MAP_REV[lowKey];
+      prayerTimesHp[hpKey] = schedule[lowKey] || '--:--';
+      prayerOffsetsHp[hpKey] = offsets[lowKey] || 0;
+      prayerSettingsHp[hpKey] = {
+        countdownBefore: cdA[lowKey] != null ? cdA[lowKey] : 10,
+        iqamahDuration: cdI[lowKey] != null ? cdI[lowKey] : 25,
+        overlayDuration: cdO[lowKey] != null ? cdO[lowKey] : 15
+      };
+    }
+
+    var av = {
+      'pre-adzan': parseInt(localStorage.getItem('vol_audioShalawat') || '80', 10),
+      'adzan': parseInt(localStorage.getItem('vol_audioAdzan') || '100', 10),
+      'alarm': parseInt(localStorage.getItem('vol_audioBeep') || '80', 10)
+    };
+
+    var state = {
+      ts: Date.now(),
+      masjidName: S_.masjidName || 'Mahallah TV',
+      masjidLocation: S_.masjidAddress || '',
+      cityApi: '', // app ini pakai koordinat tetap, tidak ada pilihan kota
+      template: 'default',
+      imsakEnabled: true,
+      syuruqEnabled: true,
+      dhuhaEnabled: true,
+      modeJumat: typeof isJumat === 'function' ? !!isJumat() : false,
+      muteAll: localStorage.getItem('ftv_muteAll') === 'true',
+      audioVolume: av,
+      preAdzanSource: 'default',
+      preAdzanYoutubeUrl: '',
+      popupPosition: 'right',
+      popupScale: 100,
+      globalFontScale: 100,
+      prayerTimes: prayerTimesHp,
+      prayerOffsets: prayerOffsetsHp,
+      prayerSettings: prayerSettingsHp,
+      sleepModeEnabled: false,
+      overlayActive: false,
+
+      runningText: S_.runningText || '',
+      runningTextSpeed: 60,
+
+      bgSpeed: 8,
+      bgMode: 'fade',
+
+      papanEnabled: false,
+      papanTitle: '',
+      papanDesc: '',
+
+      kajianEnabled: false,
+      hideCards: false,
+      kajianPemateri: '',
+      kajianPemateriDelay: 5,
+      kajianPemateriDuration: 30,
+      kajianRibbonTema: 0,
+      kajianRibbonFontSize: 17,
+
+      camTransition: 'static',
+
+      donasiEnabled: false,
+      donasiJudul: '',
+      donasiDesc: '',
+
+      currentTheme: 'default',
+      islamicEvents: [],
+
+      adzanModeEnabled: false,
+      kasAyatEnabled: false,
+      kasMasjidView: 'minggu',
+      kaRotationDuration: 8,
+      kasMasjidEntries: [],
+
+      mediaSummary: null // diisi async di bawah, lalu dikirim menyusul
+    };
+
+    db.collection('devices').doc(deviceId).set({ state: state }, { merge: true }).catch(function (e) {
+      console.error('[FRB] Gagal push state:', e);
+    });
+
+    // Susulkan mediaSummary (perlu baca IndexedDB dulu, async)
+    if (typeof openAudioDB === 'function') {
+      openAudioDB(function (db2) {
+        var tx = db2.transaction('audioFiles', 'readonly');
+        var req = tx.objectStore('audioFiles').get('uploadedImages_meta');
+        req.onsuccess = function () {
+          var images = (req.result && req.result.data) ? req.result.data : [];
+          var backgrounds = images.map(function (img, idx) {
+            return { id: idx, name: img.name || ('Gambar ' + (idx + 1)), thumb: img.data };
+          });
+          db.collection('devices').doc(deviceId).set({
+            'state.mediaSummary': {
+              backgrounds: backgrounds,
+              audio: { adzan: [], 'pre-adzan': [], alarm: [] },
+              donasiQr: { hasFile: false }
+            }
+          }, { merge: true }).catch(function () {});
+        };
+      });
+    }
+  }
+
+  // ===================== Boot =====================
+  function boot() {
+    if (!initFirebase()) return;
+
+    var savedId = localStorage.getItem(LS_DEVICE_ID);
+    var savedPaired = localStorage.getItem(LS_PAIRED) === 'true';
+
+    if (savedId && savedPaired) {
+      deviceId = savedId;
+      db.collection('devices').doc(deviceId).get().then(function (snap) {
+        var data = snap.data();
+        if (!data || data.paired === false) {
+          resetPairing();
+        } else {
+          startBridge();
+          listenForPairingComplete();
+        }
+      }).catch(function () {
+        startBridge();
+        listenForPairingComplete();
+      });
+    }
+    // Belum pernah paired: TV langsung masuk tampilan utama seperti biasa.
+    // Pairing dibuka manual lewat menu Pengaturan > Pairing HP.
+  }
+
+  function openPairingPanel() {
+    if (!db && !initFirebase()) {
+      alert('Gagal terhubung ke server. Cek koneksi internet lalu coba lagi.');
+      return;
+    }
+    if (localStorage.getItem(LS_PAIRED) === 'true' && deviceId) {
+      showPairedOverlay();
+    } else {
+      startPairingFlow();
+    }
+  }
+
+  function refreshPairingStatus() {
+    var el = document.getElementById('pairing-status-text');
+    if (!el) return;
+    var paired = localStorage.getItem(LS_PAIRED) === 'true';
+    el.textContent = paired ? '\u2705 TV sudah terhubung ke HP' : '\u26aa Belum ada HP terhubung';
+    el.style.color = paired ? '#4ade80' : '#94a3b8';
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+
+  window.FirebaseRemoteBridge = {
+    getDeviceId: function () { return deviceId; },
+    forceRepair: resetPairing,
+    openPairing: openPairingPanel,
+    refreshPairingStatus: refreshPairingStatus
+  };
+
+})();

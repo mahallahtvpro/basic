@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Admin Panel - Mahallah TV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --theme-primary: #005a31;
+            --theme-primary-rgb: 0, 90, 49;
+        }
+        
+        body {
+            background: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+        }
+        
+        .stats-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        
+        .stats-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .stats-card .number {
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--theme-primary);
+        }
+        
+        .stats-card .label {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .table-container {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .table-responsive {
+            border-radius: 12px;
+        }
+        
+        .table th {
+            background: var(--theme-primary);
+            color: white;
+            font-weight: 600;
+            border: none;
+        }
+        
+        .table td {
+            vertical-align: middle;
+        }
+        
+        .badge-used {
+            background: #dc3545;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        
+        .badge-available {
+            background: #28a745;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        
+        .btn-generate {
+            background: var(--theme-primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .btn-generate:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,90,49,0.3);
+        }
+        
+        .btn-refresh {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .code-preview {
+            font-family: monospace;
+            font-size: 18px;
+            letter-spacing: 1px;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .toast-notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            min-width: 300px;
+            animation: slideInRight 0.3s ease;
+        }
+        
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 0.6s linear infinite;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .stats-card .number {
+                font-size: 24px;
+            }
+            .table th, .table td {
+                font-size: 12px;
+                padding: 8px;
+            }
+            .btn-generate, .btn-refresh {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark" style="background: var(--theme-primary)">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-shield-lock-fill me-2"></i>
+            Admin Panel - Mahallah TV
+        </a>
+        <div>
+            <span class="text-white-50 me-3">
+                <i class="bi bi-calendar me-1"></i>
+                <span id="currentDate"></span>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+        <h3><i class="bi bi-key-fill me-2" style="color: var(--theme-primary)"></i>Manajemen Kode Aktivasi</h3>
+        <div>
+            <button class="btn-refresh me-2" onclick="refreshData()">
+                <i class="bi bi-arrow-repeat me-2"></i>Refresh
+            </button>
+            <button class="btn-generate" onclick="openGenerateModal()">
+                <i class="bi bi-plus-circle me-2"></i>Generate Kode Baru
+            </button>
+        </div>
+    </div>
+    
+    <!-- Statistik Cards -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-3 col-6">
+            <div class="stats-card">
+                <div class="number" id="totalCodes">0</div>
+                <div class="label">Total Kode</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="stats-card">
+                <div class="number" id="availableCodes">0</div>
+                <div class="label">Tersedia</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="stats-card">
+                <div class="number" id="usedCodes">0</div>
+                <div class="label">Aktif</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="stats-card">
+                <div class="number" id="activeDevices">0</div>
+                <div class="label">Kadaluarsa</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Tabel Data -->
+    <div class="table-container">
+        <h5 class="mb-3"><i class="bi bi-table me-2"></i>Daftar Kode Aktivasi</h5>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Kode Aktivasi</th>
+                        <th>Status</th>
+                        <th>Email</th>
+                        <th>Tipe Lisensi</th>
+                        <th>Cloudinary</th>
+                        <th>Tgl Aktivasi</th>
+                        <th>Tgl Kadaluarsa</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="codesTableBody">
+                    <tr>
+                        <td colspan="9" class="text-center">
+                            <div class="loading" id="loadingTable" style="display: block;">
+                                <div class="spinner" style="border-color: var(--theme-primary) transparent transparent transparent"></div>
+                                <span class="ms-2">Memuat data...</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Info -->
+    <div class="alert alert-info mt-3">
+        <i class="bi bi-info-circle-fill me-2"></i>
+        <strong>Informasi:</strong>
+        Setiap kode lisensi hanya bisa aktif di <strong>satu perangkat</strong>. Kalau kode yang
+        sama diaktivasi lagi di perangkat lain, perangkat lama otomatis logout kembali ke layar aktivasi.
+    </div>
+    
+    <div class="footer">
+        <i class="bi bi-shield-check me-1"></i> Mahallah TV Admin Panel v1.0
+    </div>
+</div>
+
+<!-- Modal Generate Kode -->
+<div class="modal fade" id="generateModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header" style="background: var(--theme-primary); color: white;">
+                <h5 class="modal-title"><i class="bi bi-plus-circle me-2"></i>Buat Kode Lisensi Baru</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Kode Aktivasi</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="newLicenseKey" placeholder="RCKY-MT001" style="text-transform:uppercase">
+                        <button class="btn btn-outline-secondary" type="button" onclick="fillRandomKey()">
+                            <i class="bi bi-shuffle"></i> Acak
+                        </button>
+                    </div>
+                    <small class="text-muted">Kode inilah yang akan diminta ke pengguna di layar aktivasi TV.</small>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Pemilik</label>
+                    <input type="email" class="form-control" id="newLicenseEmail" placeholder="nama@email.com">
+                    <small class="text-muted">Dipakai pengguna untuk mereset kode kalau perlu.</small>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Tipe Lisensi</label>
+                    <select class="form-select" id="newLicenseType">
+                        <option value="lifetime">Lifetime</option>
+                        <option value="tahunan">Tahunan</option>
+                        <option value="bulanan">Bulanan</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Cloudinary Cloud Name</label>
+                        <input type="text" class="form-control" id="newCloudName" placeholder="Opsional">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Cloudinary Upload Preset</label>
+                        <input type="text" class="form-control" id="newUploadPreset" placeholder="Opsional">
+                    </div>
+                </div>
+                <div class="alert alert-warning">
+                    <i class="bi bi-exclamation-triangle me-2"></i>
+                    Pastikan kode belum pernah dipakai sebelumnya di spreadsheet lisensi.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary" onclick="createLicense()" id="generateBtn">
+                    <i class="bi bi-plus-circle me-2"></i>Buat Kode
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Perpanjang Lisensi -->
+<div class="modal fade" id="extendModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header" style="background: var(--theme-primary); color: white;">
+                <h5 class="modal-title"><i class="bi bi-arrow-up-circle me-2"></i>Perpanjang Lisensi</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Kode: <code id="extendKeyLabel"></code></p>
+                <div class="mb-3">
+                    <label class="form-label">Tipe Lisensi Baru</label>
+                    <select class="form-select" id="extendLicenseType">
+                        <option value="lifetime">Lifetime</option>
+                        <option value="tahunan">Tahunan (+1 tahun dari sisa masa aktif)</option>
+                        <option value="bulanan">Bulanan (+1 bulan dari sisa masa aktif)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary" onclick="submitExtend()" id="extendBtn">
+                    <i class="bi bi-arrow-up-circle me-2"></i>Perpanjang
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Edit Cloudinary -->
+<div class="modal fade" id="cloudinaryModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header" style="background: var(--theme-primary); color: white;">
+                <h5 class="modal-title"><i class="bi bi-cloud me-2"></i>Edit Konfigurasi Cloudinary</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Kode: <code id="cloudinaryKeyLabel"></code></p>
+                <div class="mb-3">
+                    <label class="form-label">Cloud Name</label>
+                    <input type="text" class="form-control" id="editCloudName">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Upload Preset</label>
+                    <input type="text" class="form-control" id="editUploadPreset">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary" onclick="submitUpdateCloudinary()" id="cloudinaryBtn">
+                    <i class="bi bi-check-circle me-2"></i>Simpan
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Hasil Buat Kode -->
+<div class="modal fade" id="resultModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header" style="background: #28a745; color: white;">
+                <h5 class="modal-title"><i class="bi bi-check-circle me-2"></i>Kode Berhasil Dibuat</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Kode aktivasi baru:</p>
+                <div id="generatedCodesList" class="code-preview mb-3"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Diselaraskan dengan backend Apps Script "SPREADSHEET_ID" (sheet LISENSI) —
+// backend TIDAK diubah, admin panel ini hanya disesuaikan mengikuti skema
+// kolomnya: Kode/Status/Email/CloudName/UploadPreset/TipeLisensi/
+// TglAktivasi/TglKadaluarsa/DeviceToken.
+// GANTI URL INI kalau deployment Apps Script Anda berbeda dari yang dipakai index.html.
+const LICENSE_API_URL = 'https://script.google.com/macros/s/AKfycbyYo0MVE9Q-ral0C-LlsVOKqMJQpc7JEjWB6rEbJt9OQpK0AeWYycHsazTZCh0zj2Sc/exec';
+
+let allCodesData = [];
+
+// ==================== REQUEST HELPER ====================
+
+function apiRequest(params) {
+    return new Promise((resolve, reject) => {
+        const qs = Object.keys(params)
+            .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
+            .join('&');
+        const url = LICENSE_API_URL + '?' + qs + '&_t=' + Date.now();
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.timeout = 30000;
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState !== 4) return;
+            if (xhr.status !== 200) {
+                reject(new Error('Network error'));
+                return;
+            }
+            try {
+                resolve(JSON.parse(xhr.responseText));
+            } catch (e) {
+                reject(e);
+            }
+        };
+        xhr.onerror = function() { reject(new Error('Network error')); };
+        xhr.send();
+    });
+}
+
+// ==================== INIT ====================
+
+document.addEventListener('DOMContentLoaded', function() {
+    updateDate();
+    refreshData();
+});
+
+function updateDate() {
+
+    const now = new Date();
+
+    const days = [
+        'Minggu','Senin','Selasa',
+        'Rabu','Kamis','Jumat','Sabtu'
+    ];
+
+    const months = [
+        'Januari','Februari','Maret',
+        'April','Mei','Juni',
+        'Juli','Agustus','September',
+        'Oktober','November','Desember'
+    ];
+
+    const dateStr =
+        days[now.getDay()] +
+        ', ' +
+        now.getDate() +
+        ' ' +
+        months[now.getMonth()] +
+        ' ' +
+        now.getFullYear();
+
+    document.getElementById('currentDate').textContent = dateStr;
+}
+
+// ==================== LOAD DATA ====================
+
+function refreshData() {
+
+    showLoading(true);
+
+    apiRequest({ action: 'getAll' })
+    .then(data => {
+
+        if (data.success) {
+
+            allCodesData = data.data || [];
+
+            renderTable();
+
+            updateStats();
+
+        } else {
+
+            showToast(
+                data.message || 'Gagal mengambil data',
+                'error'
+            );
+        }
+
+        showLoading(false);
+    })
+    .catch(error => {
+
+        console.error(error);
+
+        showLoading(false);
+
+        showToast(
+            'Gagal koneksi ke server',
+            'error'
+        );
+    });
+}
+
+// ==================== TABLE ====================
+
+function isLicenseExpired(item) {
+    if (!item.expiredAt || item.expiredAt === 'lifetime' || item.expiredAt === '') return false;
+    const d = new Date(item.expiredAt);
+    if (isNaN(d.getTime())) return false;
+    return d.getTime() <= Date.now();
+}
+
+function renderTable() {
+
+    const tbody =
+        document.getElementById('codesTableBody');
+
+    tbody.innerHTML = '';
+
+    if (allCodesData.length === 0) {
+
+        tbody.innerHTML =
+            '<tr><td colspan="9" class="text-center">Belum ada data</td></tr>';
+
+        return;
+    }
+
+    allCodesData.forEach((item, index) => {
+
+        const row = tbody.insertRow();
+        const expired = item.status === 'aktif' && isLicenseExpired(item);
+
+        row.insertCell(0).textContent = index + 1;
+
+        row.insertCell(1).innerHTML =
+            `<code>${item.kode}</code>`;
+
+        let statusBadge = '<span class="badge-available">Tersedia</span>';
+        if (item.status === 'aktif') {
+            statusBadge = expired
+                ? '<span class="badge-used">Kadaluarsa</span>'
+                : '<span class="badge-used" style="background:#28a745">Aktif</span>';
+        }
+        row.insertCell(2).innerHTML = statusBadge;
+
+        row.insertCell(3).innerHTML = item.email || '-';
+
+        row.insertCell(4).innerHTML =
+            (item.licenseType || 'lifetime');
+
+        row.insertCell(5).innerHTML =
+            (item.cloudName || item.uploadPreset)
+            ? `<small>${item.cloudName || '-'}<br>${item.uploadPreset || '-'}</small>`
+            : '-';
+
+        row.insertCell(6).innerHTML =
+            item.activatedAt ? formatDate(item.activatedAt) : '-';
+
+        row.insertCell(7).innerHTML =
+            (!item.expiredAt || item.expiredAt === 'lifetime' || item.expiredAt === '')
+            ? (item.status === 'aktif' ? 'Lifetime' : '-')
+            : formatDate(item.expiredAt);
+
+        const actionCell = row.insertCell(8);
+        actionCell.innerHTML = '';
+        actionCell.style.whiteSpace = 'nowrap';
+
+        const extendBtn = document.createElement('button');
+        extendBtn.className = 'btn btn-sm btn-outline-success me-1 mb-1';
+        extendBtn.title = 'Perpanjang / Aktifkan';
+        extendBtn.innerHTML = '<i class="bi bi-arrow-up-circle"></i>';
+        extendBtn.onclick = () => openExtendModal(item);
+        actionCell.appendChild(extendBtn);
+
+        const cloudBtn = document.createElement('button');
+        cloudBtn.className = 'btn btn-sm btn-outline-primary me-1 mb-1';
+        cloudBtn.title = 'Edit Cloudinary';
+        cloudBtn.innerHTML = '<i class="bi bi-cloud"></i>';
+        cloudBtn.onclick = () => openCloudinaryModal(item);
+        actionCell.appendChild(cloudBtn);
+
+        if (item.status === 'aktif') {
+            const resetBtn = document.createElement('button');
+            resetBtn.className = 'btn btn-sm btn-outline-warning me-1 mb-1';
+            resetBtn.title = 'Reset (bebaskan device)';
+            resetBtn.innerHTML = '<i class="bi bi-arrow-counterclockwise"></i>';
+            resetBtn.onclick = () => resetLicense(item);
+            actionCell.appendChild(resetBtn);
+        }
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.className = 'btn btn-sm btn-outline-danger mb-1';
+        deleteBtn.title = 'Hapus';
+        deleteBtn.innerHTML = '<i class="bi bi-trash"></i>';
+        deleteBtn.onclick = () => deleteCode(item.kode);
+        actionCell.appendChild(deleteBtn);
+    });
+}
+
+function formatDate(dateStr) {
+
+    if (!dateStr) return '-';
+
+    try {
+
+        return new Date(dateStr)
+            .toLocaleDateString('id-ID');
+
+    } catch(e) {
+
+        return dateStr;
+    }
+}
+
+// ==================== STATS ====================
+
+function updateStats() {
+
+    const total = allCodesData.length;
+
+    const active = allCodesData.filter(
+        c => c.status === 'aktif' && !isLicenseExpired(c)
+    ).length;
+
+    const expired = allCodesData.filter(
+        c => c.status === 'aktif' && isLicenseExpired(c)
+    ).length;
+
+    const available = total - allCodesData.filter(c => c.status === 'aktif').length;
+
+    document.getElementById('totalCodes')
+        .textContent = total;
+
+    document.getElementById('availableCodes')
+        .textContent = available;
+
+    document.getElementById('usedCodes')
+        .textContent = active;
+
+    document.getElementById('activeDevices')
+        .textContent = expired;
+}
+
+// ==================== LOADING ====================
+
+function showLoading(show) {
+
+    const loadingEl =
+        document.getElementById('loadingTable');
+
+    if (loadingEl) {
+
+        loadingEl.style.display =
+            show ? 'block' : 'none';
+    }
+}
+
+// ==================== CREATE ====================
+
+function generateRandomCode(prefix) {
+
+    const chars =
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+
+    let randomPart = '';
+
+    for (let i = 0; i < 6; i++) {
+
+        randomPart +=
+            chars.charAt(
+                Math.floor(Math.random() * chars.length)
+            );
+    }
+
+    return prefix + randomPart;
+}
+
+function fillRandomKey() {
+    const existingKeys = allCodesData.map(c => c.kode);
+    let newKey;
+    do {
+        newKey = generateRandomCode('RCKY-');
+    } while (existingKeys.includes(newKey));
+    document.getElementById('newLicenseKey').value = newKey;
+}
+
+function openGenerateModal() {
+
+    document.getElementById('newLicenseKey').value = '';
+    document.getElementById('newLicenseEmail').value = '';
+    document.getElementById('newLicenseType').value = 'lifetime';
+    document.getElementById('newCloudName').value = '';
+    document.getElementById('newUploadPreset').value = '';
+
+    new bootstrap.Modal(
+        document.getElementById('generateModal')
+    ).show();
+}
+
+function createLicense() {
+
+    const key = document.getElementById('newLicenseKey').value.trim().toUpperCase();
+    const email = document.getElementById('newLicenseEmail').value.trim();
+    const licenseType = document.getElementById('newLicenseType').value;
+    const cloudName = document.getElementById('newCloudName').value.trim();
+    const uploadPreset = document.getElementById('newUploadPreset').value.trim();
+
+    if (!key) {
+        showToast('Kode aktivasi harus diisi', 'warning');
+        return;
+    }
+
+    const generateBtn = document.getElementById('generateBtn');
+    generateBtn.disabled = true;
+    generateBtn.innerHTML = '<span class="spinner"></span> Menyimpan...';
+
+    apiRequest({
+        action: 'create',
+        key: key,
+        email: email,
+        cloudName: cloudName,
+        uploadPreset: uploadPreset,
+        licenseType: licenseType
+    })
+    .then(result => {
+
+        generateBtn.disabled = false;
+        generateBtn.innerHTML = '<i class="bi bi-plus-circle me-2"></i>Buat Kode';
+
+        if (!result.success) {
+            showToast(
+                result.message === 'duplicate'
+                    ? 'Kode sudah ada, pakai kode lain'
+                    : (result.message || 'Gagal menyimpan'),
+                'error'
+            );
+            return;
+        }
+
+        bootstrap.Modal.getInstance(
+            document.getElementById('generateModal')
+        ).hide();
+
+        document.getElementById('generatedCodesList').innerHTML =
+            `<div class="d-flex justify-content-between align-items-center">
+                <code style="font-size:18px">${key}</code>
+                <button class="btn btn-sm btn-outline-primary" onclick="copyCode('${key}')">
+                    <i class="bi bi-copy"></i>
+                </button>
+            </div>`;
+        new bootstrap.Modal(document.getElementById('resultModal')).show();
+
+        showToast('Kode berhasil dibuat', 'success');
+        refreshData();
+    })
+    .catch(error => {
+        console.error(error);
+        generateBtn.disabled = false;
+        generateBtn.innerHTML = '<i class="bi bi-plus-circle me-2"></i>Buat Kode';
+        showToast('Gagal koneksi ke server', 'error');
+    });
+}
+
+// ==================== DELETE ====================
+
+function deleteCode(kode) {
+
+    if (!confirm(`Hapus kode ${kode}?`)) return;
+
+    apiRequest({ action: 'delete', key: kode })
+
+    .then(result => {
+
+        if (!result.success) {
+
+            showToast(
+                result.message || 'Gagal menghapus',
+                'error'
+            );
+
+            return;
+        }
+
+        allCodesData =
+            allCodesData.filter(
+                c => c.kode !== kode
+            );
+
+        renderTable();
+
+        updateStats();
+
+        showToast(
+            'Kode berhasil dihapus',
+            'success'
+        );
+    })
+
+    .catch(error => {
+
+        console.error(error);
+
+        showToast(
+            'Gagal koneksi server',
+            'error'
+        );
+    });
+}
+
+// ==================== EXTEND ====================
+
+let extendTargetKey = null;
+
+function openExtendModal(item) {
+    extendTargetKey = item.kode;
+    document.getElementById('extendKeyLabel').textContent = item.kode;
+    document.getElementById('extendLicenseType').value = item.licenseType || 'lifetime';
+    new bootstrap.Modal(document.getElementById('extendModal')).show();
+}
+
+function submitExtend() {
+    if (!extendTargetKey) return;
+    const licenseType = document.getElementById('extendLicenseType').value;
+    const btn = document.getElementById('extendBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> Memproses...';
+
+    apiRequest({ action: 'extend', key: extendTargetKey, licenseType: licenseType })
+    .then(result => {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="bi bi-arrow-up-circle me-2"></i>Perpanjang';
+
+        if (!result.success) {
+            showToast(result.message || 'Gagal memperpanjang', 'error');
+            return;
+        }
+
+        bootstrap.Modal.getInstance(document.getElementById('extendModal')).hide();
+        showToast('Lisensi berhasil diperpanjang/diaktifkan', 'success');
+        refreshData();
+    })
+    .catch(error => {
+        console.error(error);
+        btn.disabled = false;
+        btn.innerHTML = '<i class="bi bi-arrow-up-circle me-2"></i>Perpanjang';
+        showToast('Gagal koneksi ke server', 'error');
+    });
+}
+
+// ==================== RESET (bebaskan device) ====================
+
+function resetLicense(item) {
+    const email = prompt(`Masukkan email terdaftar untuk kode ${item.kode} guna mereset device:`, item.email || '');
+    if (email === null) return;
+    if (!email.trim()) {
+        showToast('Email wajib diisi untuk reset', 'warning');
+        return;
+    }
+
+    apiRequest({ action: 'reset', key: item.kode, email: email.trim() })
+    .then(result => {
+        if (!result.success) {
+            showToast('Reset gagal — email tidak cocok?', 'error');
+            return;
+        }
+        showToast(`Kode ${item.kode} berhasil direset, siap dipakai di device baru`, 'success');
+        refreshData();
+    })
+    .catch(error => {
+        console.error(error);
+        showToast('Gagal koneksi ke server', 'error');
+    });
+}
+
+// ==================== EDIT CLOUDINARY ====================
+
+let cloudinaryTargetKey = null;
+
+function openCloudinaryModal(item) {
+    cloudinaryTargetKey = item.kode;
+    document.getElementById('cloudinaryKeyLabel').textContent = item.kode;
+    document.getElementById('editCloudName').value = item.cloudName || '';
+    document.getElementById('editUploadPreset').value = item.uploadPreset || '';
+    new bootstrap.Modal(document.getElementById('cloudinaryModal')).show();
+}
+
+function submitUpdateCloudinary() {
+    if (!cloudinaryTargetKey) return;
+    const cloudName = document.getElementById('editCloudName').value.trim();
+    const uploadPreset = document.getElementById('editUploadPreset').value.trim();
+    const btn = document.getElementById('cloudinaryBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> Menyimpan...';
+
+    apiRequest({
+        action: 'updateCloudinary',
+        key: cloudinaryTargetKey,
+        cloudName: cloudName,
+        uploadPreset: uploadPreset
+    })
+    .then(result => {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="bi bi-check-circle me-2"></i>Simpan';
+
+        if (!result.success) {
+            showToast(result.message || 'Gagal menyimpan', 'error');
+            return;
+        }
+
+        bootstrap.Modal.getInstance(document.getElementById('cloudinaryModal')).hide();
+        showToast('Konfigurasi Cloudinary tersimpan', 'success');
+        refreshData();
+    })
+    .catch(error => {
+        console.error(error);
+        btn.disabled = false;
+        btn.innerHTML = '<i class="bi bi-check-circle me-2"></i>Simpan';
+        showToast('Gagal koneksi ke server', 'error');
+    });
+}
+
+// ==================== COPY ====================
+
+function copyCode(code) {
+
+    navigator.clipboard.writeText(code);
+
+    showToast(
+        `Kode ${code} disalin`,
+        'success'
+    );
+}
+
+// ==================== TOAST ====================
+
+function showToast(message, type='info') {
+
+    const toast = document.createElement('div');
+
+    toast.className = 'toast-notification';
+
+    const colors = {
+        success: '#28a745',
+        error: '#dc3545',
+        warning: '#ffc107',
+        info: '#17a2b8'
+    };
+
+    toast.style.backgroundColor =
+        colors[type] || colors.info;
+
+    toast.style.color =
+        type === 'warning'
+        ? '#333'
+        : 'white';
+
+    toast.style.padding = '12px 20px';
+
+    toast.style.borderRadius = '8px';
+
+    toast.innerHTML = message;
+
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+
+        toast.remove();
+
+    }, 3000);
+}
+</script>
+</body>
+</html>
